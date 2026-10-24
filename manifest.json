@@ -59,8 +59,8 @@
     },
     {
       "path": "VERIFICATION-RECORD.md",
-      "bytes": 7136,
-      "sha256": "6939c1f8c4a04c85a10a43bf5b741082d2b9f2c8671f4e27f263f5b3136f1f13"
+      "bytes": 8191,
+      "sha256": "2182223c2fd8c9153b0d3e1d7cd13a348323cbd1d09a97f65f829a2c853ddabc"
     },
     {
       "path": "checkers/check_finite.py",
@@ -610,7 +610,7 @@
       "raw_sha256": "631ac92da076e4a326679c970c40de299495a17909038f5f836748349d8e4935"
     }
   ],
-  "total_bytes_without_manifest": 6957762,
+  "total_bytes_without_manifest": 6958817,
   "large_proofs": {
     "DRAT": {
       "parts": [

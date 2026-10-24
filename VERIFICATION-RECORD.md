@@ -13,6 +13,23 @@ and v1-to-v1.1 diff: ACCEPT for overclaiming and ACCEPT for distinguishing
 the variant from the fixed-family bound 12. This reading did not independently
 verify the D=25 design; that observation is outside this package's certificates.
 
+## Version 1.2 preparation checks
+
+One fresh AI reader received only the Version 1.2 PDF, TeX, v1.1-to-v1.2 diff
+and package filename list. It returned ACCEPT for overclaiming, Appendix A
+filename consistency and preservation of the central mathematical claims.
+The D=25 existence statement was already present in v1.1; the new footnote
+adds a particular sequence and target assertion, not a maximum or priority claim.
+This reading did not independently verify that witness and is not human review.
+
+A fresh local clone of `42ed28212b18871a88a432f55ff26b620d5ea4ec` passed every
+light check (85 files; 13.054 seconds) and all 34 U14 LRATs, with the valid and
+missing-hint controls (2.709 seconds). The already pinned official ARM checker
+executable was reused after checking its SHA-256; it was not rebuilt for this
+revision. All eight compressed D13 proof files matched their recorded sizes and
+SHA-256 hashes. No new D13 DRAT or LRAT replay was performed for Version 1.2.
+The theorem, checker programs, mathematical data and proof files are unchanged.
+
 ## Prior evidence used by the article
 
 | Role | Date/time (JST, 24 October 2026 unless noted) | Scope |
