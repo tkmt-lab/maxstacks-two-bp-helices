@@ -1,9 +1,10 @@
 # Entry point for a computational reader
 
 Read README.md, claims.json, claims/STATEMENT-A.md and VERIFICATION-RECORD.md.
-The article is paper/paper-v1.1.pdf with draft-v1.1 TeX alongside it.
-The Scope-only v1.1 note concerns a separate zero-separator variant; it does not
-change the fixed-family theorem or certificates. Draft v1 is retained.
+The article is paper/paper-v1.2.pdf with Version 1.2 TeX alongside it.
+Version 1.2 clarifies definitions, file references and the separate D=25 example;
+it does not change the fixed-family theorem or certificates. Drafts v1 and v1.1
+are retained.
 Run python3 -B checkers/verify.py, then build the pinned official checker and
 run checkers/verify_lrat.py as documented. Python 3.11+, standard library.
 Optimized Python is refused. Generated files belong in ignored work/.

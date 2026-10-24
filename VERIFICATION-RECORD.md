@@ -2,10 +2,9 @@
 
 Author: Tatsuhiko Takimoto. Package assembly: literature-role Codex, 24 October
 2026 JST. Original article input revision: `bb2e15b71` (draft v1). The current
-article is draft v1.1, edited from research revision `244e6d2a0` with only a
-draft-label change and two Scope sentences about a separate zero-separator
-variant admitting a design at D=25. No maximum-25 or exclusion-above-25 claim
-is included. The fixed-family theorem and its certificates are unchanged.
+article is Version 1.2, edited from research revision `1dc1d3883` (draft v1.1).
+Version 1.2 changes the version label, clarifies definitions and actual package references, and adds the separate D=25 witness footnote; the theorem, proof, tables and certificate hashes are unchanged.
+No maximum-25, exclusion-above-25 or priority claim is included.
 Packaging is subsequent integration with research and verification records
 available. It is not a new blind derivation or independent human review.
 

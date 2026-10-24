@@ -8,7 +8,7 @@ T_D = '((.' + '((.)).' * (D-1) + '))',   D >= 2,
 
 the largest designable D is **12**. A 71-base sequence uniquely designs T₁₂;
 T_D has no design for every D≥13. This package contains the
-[article, draft v1.1](paper/paper-v1.1.pdf), its [TeX source](paper/paper-v1.1.tex),
+[article, Version 1.2](paper/paper-v1.2.pdf), its [TeX source](paper/paper-v1.2.tex),
 the [claim specification](claims/STATEMENT-A.md), data and reproducible checks.
 
 The question and maxStacks framework come from **Théo Boury, Laurent Bulteau
@@ -102,6 +102,7 @@ files totalling **2,212,249,047 bytes**: seven DRAT parts (613,931,594 bytes)
 and one LRAT (1,598,317,453 bytes). They are outside Git. Their filenames,
 compressed/expanded hashes and the DRAT order are in
 [data/large-proofs.json](data/large-proofs.json) and [manifest.json](manifest.json).
+The large proofs will be distributed separately as release attachments.
 No download URL or publication identifier has been assigned to this local package.
 
 With the companion directory beside this repository, run:
@@ -163,16 +164,18 @@ Git records the manifest itself. Never refresh hashes to conceal an unexplained
 mismatch. After a reviewed intentional edit, use `python3 -B tools/update_manifest.py`
 and rerun the relevant checks.
 
-The included PDF and TeX are draft v1.1. Relative to draft v1, only the draft
-label and two Scope sentences change: a design at D=25 in the zero-separator
-variant is reported as separate work, outside this paper's claims and certificates.
-The theorem, mathematical data, proof files and checker programs are unchanged.
-The earlier draft v1 files are retained in `paper/`. To rebuild the article with
+The included PDF and TeX are Version 1.2. Relative to draft v1.1, this version
+clarifies legal structures, DP scores and counts, the alphabet order, and the
+actual companion filenames. A footnote supplies the 124-base sequence and target
+for the separate zero-separator D=25 example, outside the article's claims and
+certificates; it makes no maximum or priority claim. The theorem, mathematical
+data, proof files and checker programs are unchanged. Earlier drafts v1 and
+v1.1 are retained in `paper/`. To rebuild the article with
 an existing LaTeX installation, use its preamble's packages and run `pdflatex`
 twice, sending output to `work/paper/`. PDF bytes may differ across engines.
 The certificate checks do not require a TeX installation.
 
-Tatsuhiko Takimoto. Package version **1.0.0**; article **draft v1.1**.
+Tatsuhiko Takimoto. Package version **1.0.0**; article **Version 1.2**.
 See [CITATION.cff](CITATION.cff). Code is Apache-2.0; original prose, data and
 proof certificates are CC BY 4.0. Full license texts and third-party boundaries
 are in [LICENSE](LICENSE). This local package has not been published.
