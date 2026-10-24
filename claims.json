@@ -1,0 +1,46 @@
+{
+  "schema": "maxstacks.claims.v1",
+  "version": "1.0.0",
+  "model": {
+    "pairs": "AU UA CG GC GU UG",
+    "min_pair_separation_j_minus_i": 2,
+    "min_hairpin_unpaired": 1,
+    "isolated_pairs": false,
+    "noncrossing": true,
+    "score": "stack 数",
+    "note": "One unpaired hairpin base, not the usual three."
+  },
+  "claim": "For T_D = '((.' + '((.)).'*(D-1) + '))', T_12 has a unique maxStacks design and every D >= 13 has no such design. Thus D_2 = 12 in this fixed family.",
+  "D12_lower": {
+    "target": "((.((.)).((.)).((.)).((.)).((.)).((.)).((.)).((.)).((.)).((.)).((.)).))",
+    "sequence": "GAAAGCCUAGGACCACCCGGACGACGAACAGUACAAUGAGUAACAUGACACUAAUAAAUAAUCGCAGCAUC"
+  },
+  "D13": {
+    "spec": "claims/SPEC.md",
+    "rivals": "rivals-D13.txt.gz",
+    "rivals_plain_sha256": "e1a149ce72fc055faa1e1f459ed1fd2f885df3d1c2795dab490154ac687f042a",
+    "rivals_count": 227280,
+    "cnf_sha256": "4f8100bbe4362bf45db9b4be068eb115bf1c48c3f556ce5c3bceff1e7f5a4a6c",
+    "variables": 3158,
+    "clauses": 268408
+  },
+  "D_ge_14": {
+    "argument": "claims/RIVAL-UPPER.md",
+    "target_U14": "((..((.))..((.))..((.))..((.))..((.))..((.))..((.))..((.))..((.))..((.))..((.))..((.))..((.))..))",
+    "variables": 5044,
+    "base_clauses": 67129,
+    "rival_clauses": 1731,
+    "base_cnf_sha256": "5ff81ea47c5fa1f66300587ea0d036cae32598c2070374e8ee423056f89f715f",
+    "rivals": "rivals-U14.txt.gz",
+    "rivals_plain_sha256": "0ad72ae92ae2ab1f141d6a4ed213a0ac6df72cd154430fdccae30a64e370374c"
+  },
+  "case_data": "data/U14-cases.json",
+  "not_claimed": [
+    "Designability of every D <= 12",
+    "A result for arbitrary RNA trees",
+    "Hairpins with three or more unpaired bases",
+    "The Turner energy model or experimental RNA",
+    "Priority or human peer review",
+    "A proof-assistant verification of the RNA-to-CNF correspondence"
+  ]
+}

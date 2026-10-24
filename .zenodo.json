@@ -1,0 +1,21 @@
+{
+  "title": "Twelve two-base-pair helices: an exact designability bound for a fixed family in the maxStacks model",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "version": "1.0.0",
+  "creators": [
+    {
+      "name": "Takimoto, Tatsuhiko",
+      "affiliation": "Independent researcher"
+    }
+  ],
+  "description": "Article draft v1 and certificate package for a fixed RNA target family in the maxStacks model. A 71-base sequence uniquely designs T12; all D>=13 are excluded. The model allows GU pairs, forbids isolated pairs and requires j-i>=2 (one unpaired hairpin base, not the usual three). The package supplies standard-library DP, rival and CNF checks, word-case coverage and U14 LRAT proofs. Large D13 DRAT/LRAT proofs are separate companions. The question comes from Boury, Bulteau and Ponty. No claim is made for arbitrary RNA trees, every D<=12, Turner energies, priority or human peer review. Code: Apache 2.0; original prose, data and proof certificates: CC BY 4.0.",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "RNA inverse folding",
+    "maxStacks",
+    "designability",
+    "SAT certificates",
+    "LRAT"
+  ]
+}

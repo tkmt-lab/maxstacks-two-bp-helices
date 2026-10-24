@@ -1,0 +1,41 @@
+{
+  "schema": "maxstacks.provenance.v1",
+  "article_input_commit": "bb2e15b71",
+  "article_unchanged": true,
+  "assembly_date": "2026-10-24",
+  "assembly_is_new_blind_verification": false,
+  "adapted_code": [
+    {
+      "source": "R004/r017-a-independent/core.py",
+      "source_sha256": "598b2d018baba5c0246d6d51f8b181db92978433048912fb1496b1c2640175b1",
+      "package_path": "checkers/core.py"
+    },
+    {
+      "source": "R004/r017-a-independent/check_finite.py",
+      "source_sha256": "192c5b136ad39f24b663cb8eea66fdea828daef5363a643f499b877ff5ec6d2d",
+      "package_path": "checkers/check_finite.py"
+    },
+    {
+      "source": "R004/r017-a-independent/check_upper.py",
+      "source_sha256": "bbf4e88ca74ef0d615af2c7a9129f66c67bf7d31e21ad5279556ed6c86a77a14",
+      "package_path": "checkers/check_upper.py"
+    }
+  ],
+  "adaptations": [
+    "Replaced private absolute paths with package-relative data and ignored work outputs.",
+    "Replaced producer-file comparisons by fixed canonical hashes and case clause-multiset checks.",
+    "Preserved model, DP, rival, coverage, symmetry and finite-embedding algorithms.",
+    "Added package inventory and gzip integrity checks, explicit optimized-Python refusal, and strict LRAT stream runner.",
+    "Translated mathematical claim documents into English and added exact U14 serialization order."
+  ],
+  "article": [
+    {
+      "path": "paper/paper-v1.tex",
+      "sha256": "e56bb9bae672b462478485a6ecb9634b54f8fa90c07569f31e17d5b113c9449a"
+    },
+    {
+      "path": "paper/paper-v1.pdf",
+      "sha256": "eee05a735b131b00b712f76a2108f3ba69834cd24e539ff22a97a773168dd944"
+    }
+  ]
+}

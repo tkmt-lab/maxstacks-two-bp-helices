@@ -1,0 +1,66 @@
+{
+  "DRAT": {
+    "parts": [
+      {
+        "path": "01-input-deletions.drat.gz",
+        "gzip_sha256": "8cd9d1293303634532f638f2df56f28407286b5534789ded58eebc30d3562955",
+        "gzip_bytes": 1626412,
+        "raw_sha256": "abb4be9e0f87bf8cdec9bdf2f0decddba7548db3853a574e5b357e911aca52a1",
+        "raw_bytes": 7063084
+      },
+      {
+        "path": "02-common.drat.gz",
+        "gzip_sha256": "a42d0a1bcaedf8307d9ac0dc8a44eff91c8f783e35089aba0b0630d9bdbd8186",
+        "gzip_bytes": 49750,
+        "raw_sha256": "39d86359655246b78ca6c6e0aff1674f9f599add4f81c3a1ff773009f41f5a47",
+        "raw_bytes": 123423
+      },
+      {
+        "path": "03-definitions-without-cases.drat.gz",
+        "gzip_sha256": "2e2a9daa7c7880e182804747e8896b47f44bf97ad748071636582a0f25da0840",
+        "gzip_bytes": 24704,
+        "raw_sha256": "a45e3465ffff1bb663142f7aa68e558e250018013dc97d2b80b4579696c0bffa",
+        "raw_bytes": 60496
+      },
+      {
+        "path": "04-relations.drat.gz",
+        "gzip_sha256": "eeb72b061c5126ecd3c72005e85d8c1bbdca0a383266fb11ffc69a1b08d444ef",
+        "gzip_bytes": 121670,
+        "raw_sha256": "23f0760e153065203a6e3878c31b2bf974116a978a05f44dad69f3de774740db",
+        "raw_bytes": 391172
+      },
+      {
+        "path": "05-context-cases.drat.gz",
+        "gzip_sha256": "74c2148bbb15b760fc7cbb0eecdc9abc984bc28910b77522af30c9f3742ea150",
+        "gzip_bytes": 563269,
+        "raw_sha256": "d62d45e91dfc295afefe9b516a70bed9b5a42795a7901a887c72a2c9853f2b51",
+        "raw_bytes": 1811744
+      },
+      {
+        "path": "06-physical-cases.drat.gz",
+        "gzip_sha256": "89a67464e2ec2877bf5d8dabf704d1e0c9bebd7ae86f03b110e817983e6368df",
+        "gzip_bytes": 566266527,
+        "raw_sha256": "2e0ab05ad5b53316824a04a6838cd6c7b57c42b096df31fd70d810113e0069d7",
+        "raw_bytes": 1390274134
+      },
+      {
+        "path": "07-proof.drat.gz",
+        "gzip_sha256": "2e47e0403dabb096ea5dad688b1c4d3ad0655e4b7501510b7c9ad869e3e843af",
+        "gzip_bytes": 45279262,
+        "raw_sha256": "fa1189bb442a99e78fa1b906e9017a817782862898ec11011c7064412a2c9c72",
+        "raw_bytes": 649311206
+      }
+    ],
+    "raw_sha256": "ef0a5a3cd19984a3f8973740d247ea229c57044a39d8b4068895e3493b0aa116",
+    "raw_bytes": 2049035259,
+    "format": "binary DRAT; concatenate decompressed parts in listed order"
+  },
+  "LRAT": {
+    "path": "D13.lratb.gz",
+    "gzip_sha256": "8705abc77e86aa52856ef6c36f4bc01037693e7ef57fda96e0bf48f56cbc523a",
+    "gzip_bytes": 1598317453,
+    "raw_sha256": "9b54d5df00f8db04a2d9d51688175ed75df683e54839c28db56fda714fddbd91",
+    "raw_bytes": 5428472887,
+    "format": "binary LRAT"
+  }
+}

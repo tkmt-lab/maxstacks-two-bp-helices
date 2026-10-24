@@ -1,0 +1,13 @@
+Copyright 2026 Tatsuhiko Takimoto.
+
+Code (checkers/*.py, tools/*.py and .github/workflows/*.yml): Apache License 2.0.
+The full text is in Apache-2.0.txt.
+
+Original prose, numerical data and generated proof certificates (Markdown,
+TeX, PDF, JSON, text data, gzip proofs, CITATION.cff and other metadata):
+Creative Commons Attribution 4.0 International. Full text: CC-BY-4.0.txt.
+The separate large proof files have the same CC BY 4.0 license.
+
+Cited works and third-party programs retain their own licenses. This package
+does not redistribute the cited papers or the cake_lpr source. The build script
+fetches the pinned official repository; consult its licensing for that code.

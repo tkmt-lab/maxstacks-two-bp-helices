@@ -1,0 +1,30 @@
+name: MaxStacks certificate checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reconstruct inputs and check model, rivals and coverage
+        run: nice -n 10 python3 -B checkers/verify.py
+      - name: Build the pinned official x64 checker
+        run: nice -n 10 python3 -B tools/build_cake.py
+      - name: Check all 34 U14 LRATs
+        run: nice -n 10 python3 -B checkers/verify_lrat.py --checker work/cake_lpr/cake_lpr --scope U14
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verification-records
+          path: |
+            work/checks/*.json
+            work/lrat/
+            work/cake-build.json
+            work/cake-build.log

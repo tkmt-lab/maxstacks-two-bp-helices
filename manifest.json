@@ -1,0 +1,581 @@
+{
+  "schema": "maxstacks.manifest.v1",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 44,
+      "sha256": "cce50ea44272b86b3cb1a6c17c6a8857741ab03d753b19d2061d4e34ff13a00d"
+    },
+    {
+      "path": ".github/workflows/check.yml",
+      "bytes": 972,
+      "sha256": "eac1125124dad6c133689cfc4faaf40c66c313a4f211b05c0af42c62ee55d383"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 36,
+      "sha256": "d6e103e0e9765596b3a735e10d024753532e9c0fde9a2b84e891e1b806855efd"
+    },
+    {
+      "path": ".zenodo.json",
+      "bytes": 1152,
+      "sha256": "5992db6131b7d6e31305f90c333769d920059c891e9b5603fedd0d96cb71ff71"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1741,
+      "sha256": "e8d6106e361923c778ee795dec94aabdd9f87c60c139086c11477e1b0abe5077"
+    },
+    {
+      "path": "Apache-2.0.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "CC-BY-4.0.txt",
+      "bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 1030,
+      "sha256": "ea12e3ff88f9d9dda352bc666764ff200bde3496d4debab125a961b7f4766fd9"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 677,
+      "sha256": "472bbead090b78d350c31c7138ffed4f21d03859b87ff7ae69d6d83305f7e368"
+    },
+    {
+      "path": "PROVENANCE.json",
+      "bytes": 1643,
+      "sha256": "d3fc172124f49ea768c79648e9916664d8665b32a7a69c708148e58cea1bf297"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8998,
+      "sha256": "ec0186bd3fa6f5268d4f19d027104673f25aa0b7c433642083975b073a692e39"
+    },
+    {
+      "path": "VERIFICATION-RECORD.md",
+      "bytes": 5372,
+      "sha256": "e6db40dffda30d0fcaf8847ef1d177f504063777b9fad2b86805a48935326104"
+    },
+    {
+      "path": "checkers/check_finite.py",
+      "bytes": 5260,
+      "sha256": "01caa657ff970988bdb1f2bd7608cff9e0fd217950af981a2262a81249cdfc3d"
+    },
+    {
+      "path": "checkers/check_upper.py",
+      "bytes": 10922,
+      "sha256": "b1367fe64b4bd1c0287924b6b9f54e6411ef4cbe63385f6b21cef847513761e1"
+    },
+    {
+      "path": "checkers/core.py",
+      "bytes": 8084,
+      "sha256": "55a7d4e46e6e8ff433b985362c1501dc93e95dedf85201f607064640a71a6cae"
+    },
+    {
+      "path": "checkers/verify.py",
+      "bytes": 1712,
+      "sha256": "151446353159b7a4b8b78de6d3206bbb704cc7a6817b95a66265ad462c04d6e5"
+    },
+    {
+      "path": "checkers/verify_lrat.py",
+      "bytes": 4734,
+      "sha256": "e4c9d98a3e6390c6f4c57f3a6e888a642af5e8c7fe759261f48ac56c5817b372"
+    },
+    {
+      "path": "claims/RIVAL-UPPER.md",
+      "bytes": 6777,
+      "sha256": "2693e0502fe8f41425e19082451396b2497f57a79973e0a0259114d4820d7d11"
+    },
+    {
+      "path": "claims/SPEC.md",
+      "bytes": 3080,
+      "sha256": "7d97f764f9a74033e4f0a24620890058521a389f8a4408eb121d41e54c46e2a2"
+    },
+    {
+      "path": "claims/STATEMENT-A.md",
+      "bytes": 4177,
+      "sha256": "4e172ad572ba79abf750e23fbb51e17152b91ab3ea6d5bd08b2185b04c1ac416"
+    },
+    {
+      "path": "claims.json",
+      "bytes": 1850,
+      "sha256": "a2f6a9e2ab10f08df6051b96c8e862f6930d7ed861abeb10878c6b5071559605"
+    },
+    {
+      "path": "data/D12-sequence.txt",
+      "bytes": 72,
+      "sha256": "a9d488f5a88c3c7d2b5f896b8e52605023e9bf1452721bfe13a76ca60f67c8a3"
+    },
+    {
+      "path": "data/U14-cases.json",
+      "bytes": 21413,
+      "sha256": "9efaba0d9a61e6804184036634652f602b938ebcb03ff667573d066656f750f0"
+    },
+    {
+      "path": "data/large-proofs.json",
+      "bytes": 2645,
+      "sha256": "a6856566e8da76cfcea6067e57b77ded0875db04c2cbc143896ef4a748657940"
+    },
+    {
+      "path": "data/rivals-D13.txt.gz",
+      "bytes": 1430063,
+      "sha256": "2750a0446ffb69a72de293cf8d7a848ff4280989c535eea19fe27e41e12ac737"
+    },
+    {
+      "path": "data/rivals-U14.txt.gz",
+      "bytes": 6455,
+      "sha256": "e0c6284313eb63216de31a2310aa0ee86fe3de61fda78bbd8af01a5aeb00ba08"
+    },
+    {
+      "path": "paper/paper-v1.pdf",
+      "bytes": 105763,
+      "sha256": "eee05a735b131b00b712f76a2108f3ba69834cd24e539ff22a97a773168dd944"
+    },
+    {
+      "path": "paper/paper-v1.tex",
+      "bytes": 34939,
+      "sha256": "e56bb9bae672b462478485a6ecb9634b54f8fa90c07569f31e17d5b113c9449a"
+    },
+    {
+      "path": "proofs/U14/case-00.lrat.gz",
+      "bytes": 143151,
+      "sha256": "198ff56a35422bf650314f4b74078cf8be7e0bc2688b607415f9a122f7a930c1"
+    },
+    {
+      "path": "proofs/U14/case-01.lrat.gz",
+      "bytes": 143103,
+      "sha256": "2e7ff4eac92cb4285ab8026510295441abd2caaeecb834e9453d7aa75b75ecca"
+    },
+    {
+      "path": "proofs/U14/case-02.lrat.gz",
+      "bytes": 142871,
+      "sha256": "0958a3a2dacf1e2c81725cef5b52d210a4a2265110586e66e6111fe48fd7d8b3"
+    },
+    {
+      "path": "proofs/U14/case-03.lrat.gz",
+      "bytes": 142914,
+      "sha256": "7d3a1b14cdec1f4c0aa6781fbd1204666be674e79af4586202b762945b22594d"
+    },
+    {
+      "path": "proofs/U14/case-04.lrat.gz",
+      "bytes": 143102,
+      "sha256": "f808bd37eddac195f53e469a68846c08e6b8c98b735e53621b83357cf2e733e2"
+    },
+    {
+      "path": "proofs/U14/case-05.lrat.gz",
+      "bytes": 142871,
+      "sha256": "0958a3a2dacf1e2c81725cef5b52d210a4a2265110586e66e6111fe48fd7d8b3"
+    },
+    {
+      "path": "proofs/U14/case-06.lrat.gz",
+      "bytes": 143017,
+      "sha256": "bd5e4d76a559b1a72662b722a9509a891627c09ec6acc35a2e7374fea7bbcc60"
+    },
+    {
+      "path": "proofs/U14/case-07.lrat.gz",
+      "bytes": 143016,
+      "sha256": "54d1dce3d23a04c35879f1704edfccb859a562b14457ce4d6b66bb161fdac757"
+    },
+    {
+      "path": "proofs/U14/case-08.lrat.gz",
+      "bytes": 143151,
+      "sha256": "198ff56a35422bf650314f4b74078cf8be7e0bc2688b607415f9a122f7a930c1"
+    },
+    {
+      "path": "proofs/U14/case-09.lrat.gz",
+      "bytes": 143114,
+      "sha256": "d953b9dabfc8ec6382b3f5b970aeb74f4c5f3490964e6d9a690c6ff265e7feed"
+    },
+    {
+      "path": "proofs/U14/case-10.lrat.gz",
+      "bytes": 142901,
+      "sha256": "f612e7916fab09a9125cda38d6d3b8a3b65e0b613797f24a65fb46dd7af2b56b"
+    },
+    {
+      "path": "proofs/U14/case-11.lrat.gz",
+      "bytes": 142979,
+      "sha256": "1fd7f8224dfa9034b6c412cd74cbe343857f52460617ea9195728d0bc7d3664a"
+    },
+    {
+      "path": "proofs/U14/case-12.lrat.gz",
+      "bytes": 143126,
+      "sha256": "031af2211ad5fb5546a58478b99cb2496dccb9b1d7d116e567b191b2a6db1790"
+    },
+    {
+      "path": "proofs/U14/case-13.lrat.gz",
+      "bytes": 143084,
+      "sha256": "eb55a3a0e2fd3820449f64d300a8b40ebc6ba025ae726faa708753a53012c961"
+    },
+    {
+      "path": "proofs/U14/case-14.lrat.gz",
+      "bytes": 142835,
+      "sha256": "c1b718a605e5f6f9661f3e098f93006926273b80368145434525e4ff5fdd88c7"
+    },
+    {
+      "path": "proofs/U14/case-15.lrat.gz",
+      "bytes": 142835,
+      "sha256": "a27f124cee41fa023936219693996bf74d37e2078b90a9f6d9ef14625f6005c3"
+    },
+    {
+      "path": "proofs/U14/case-16.lrat.gz",
+      "bytes": 142835,
+      "sha256": "a27f124cee41fa023936219693996bf74d37e2078b90a9f6d9ef14625f6005c3"
+    },
+    {
+      "path": "proofs/U14/case-17.lrat.gz",
+      "bytes": 142835,
+      "sha256": "35cb00a3a57c50456dbc0078896235fee36e0b5dc07fa443c55bede05d8f227f"
+    },
+    {
+      "path": "proofs/U14/case-18.lrat.gz",
+      "bytes": 142835,
+      "sha256": "842def4ed61d7860e959d4c1816933c0c63ad328f8c023a623c02c44ba518a16"
+    },
+    {
+      "path": "proofs/U14/case-19.lrat.gz",
+      "bytes": 142835,
+      "sha256": "91290ca4c03b339f2bfbee6e29b856bd56a2f6501b1fe6016539fcc6c0f8c04f"
+    },
+    {
+      "path": "proofs/U14/case-20.lrat.gz",
+      "bytes": 142888,
+      "sha256": "109367572d7aada796faefe7b137e7748c8094e583019006fed013970efc09c3"
+    },
+    {
+      "path": "proofs/U14/case-21.lrat.gz",
+      "bytes": 142889,
+      "sha256": "239f180e1bffc32108970f263d3e01c97562ae2b1940318099ce4e8b5e2a6d00"
+    },
+    {
+      "path": "proofs/U14/case-22.lrat.gz",
+      "bytes": 143100,
+      "sha256": "1e6d0c760c4d5273a5f176d1a406c108686beb587dc66f2a1b83d88a5f54e6c3"
+    },
+    {
+      "path": "proofs/U14/case-23.lrat.gz",
+      "bytes": 142835,
+      "sha256": "91290ca4c03b339f2bfbee6e29b856bd56a2f6501b1fe6016539fcc6c0f8c04f"
+    },
+    {
+      "path": "proofs/U14/case-24.lrat.gz",
+      "bytes": 143055,
+      "sha256": "115eb42aed38600177001ca95574f5b73a2e8055d8ae34cb1abe6fe1f57a5230"
+    },
+    {
+      "path": "proofs/U14/case-25.lrat.gz",
+      "bytes": 143011,
+      "sha256": "42b2e5d1bfa44fb5ec18c174c72f3467cec6e34dd888a3e2772e83c1475c154c"
+    },
+    {
+      "path": "proofs/U14/case-26.lrat.gz",
+      "bytes": 143056,
+      "sha256": "95b2b5ac5e12bde0dd694d4740236a171275f239d78b60d96bdd923fc13d9dd4"
+    },
+    {
+      "path": "proofs/U14/case-27.lrat.gz",
+      "bytes": 142988,
+      "sha256": "21f4a7a02cc39b7186a552952a313dbe3ce685fd9194de9aa32996c6a4e95717"
+    },
+    {
+      "path": "proofs/U14/case-28.lrat.gz",
+      "bytes": 143055,
+      "sha256": "5428f5bcc2774291a2f0f3fae327baab2d7bf95e161a3700284cb06420f3d711"
+    },
+    {
+      "path": "proofs/U14/case-29.lrat.gz",
+      "bytes": 142988,
+      "sha256": "de93ba2d4d8c7d32f055e83267ffe6164a950ca2ce03544aebf6a03477a3f0b9"
+    },
+    {
+      "path": "proofs/U14/case-30.lrat.gz",
+      "bytes": 142846,
+      "sha256": "555955e17ec29ada1fea02923ff1cd5c6c92f937857266223815ebd7ce61ab1c"
+    },
+    {
+      "path": "proofs/U14/case-31.lrat.gz",
+      "bytes": 142846,
+      "sha256": "91621696f7cdde09af725acedc9dc0de419a468337b0c24ea46d948fc8c8dfbc"
+    },
+    {
+      "path": "proofs/U14/case-32.lrat.gz",
+      "bytes": 142846,
+      "sha256": "6798e60641f87cc472aa757ed3542d0f0d2f5bddd1ccf03c5f6d656c52ab52c2"
+    },
+    {
+      "path": "proofs/U14/case-33.lrat.gz",
+      "bytes": 143237,
+      "sha256": "1a01d36954d0ba4237dc80eb8d825939a9e85a00afbd36e4e7c8d6c32037d1c7"
+    },
+    {
+      "path": "tools/build_cake.py",
+      "bytes": 2651,
+      "sha256": "d9f683ed38014d0bac700e6dfa472c3e243bf50c16613e4e33f826ddb70dd6fd"
+    },
+    {
+      "path": "tools/update_manifest.py",
+      "bytes": 1608,
+      "sha256": "88ece173eff28a3d5f1e1819c83d6e8757d5a5964e79cf04467f798d82178ea5"
+    }
+  ],
+  "expanded_gzip": [
+    {
+      "path": "data/rivals-D13.txt.gz",
+      "raw_bytes": 17727840,
+      "raw_sha256": "e1a149ce72fc055faa1e1f459ed1fd2f885df3d1c2795dab490154ac687f042a"
+    },
+    {
+      "path": "data/rivals-U14.txt.gz",
+      "raw_bytes": 169638,
+      "raw_sha256": "0ad72ae92ae2ab1f141d6a4ed213a0ac6df72cd154430fdccae30a64e370374c"
+    },
+    {
+      "path": "proofs/U14/case-00.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "67c8d9b272b3f1de7d77eb33bf143592e049b36926462ecaabaaa5dc3cdbd7e7"
+    },
+    {
+      "path": "proofs/U14/case-01.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "3ba2ed316a37e7b6f22c042f6495402c0716fa2479e965307e3b8aff58a23386"
+    },
+    {
+      "path": "proofs/U14/case-02.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "a5b2eac86be8fa5be052a4dbc17b693393aa9cdc4f3ef32975d888ec370cedbd"
+    },
+    {
+      "path": "proofs/U14/case-03.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "ef2a5a497c0aa6f78872ff284624fa2ee3c335c905ec2ba9c18db584b8d517a9"
+    },
+    {
+      "path": "proofs/U14/case-04.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "470b5253e0e6f7d8ad068bdabeb6eb52105810c7e02163ae0c5d1f67b4b68191"
+    },
+    {
+      "path": "proofs/U14/case-05.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "a5b2eac86be8fa5be052a4dbc17b693393aa9cdc4f3ef32975d888ec370cedbd"
+    },
+    {
+      "path": "proofs/U14/case-06.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "312b79e27a493aa874082725f00fe978327292992a3481f3912d6faa5038e077"
+    },
+    {
+      "path": "proofs/U14/case-07.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "db688fa8260baf5cb311b9905a298c32b37d476a191b1e1b7757a7a89424aaf7"
+    },
+    {
+      "path": "proofs/U14/case-08.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "67c8d9b272b3f1de7d77eb33bf143592e049b36926462ecaabaaa5dc3cdbd7e7"
+    },
+    {
+      "path": "proofs/U14/case-09.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "4bbacadfa3272cf4b1f0b7a3994a633bef1b8e9c3d91ef8971bd6aad568a7cbd"
+    },
+    {
+      "path": "proofs/U14/case-10.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "98e5b20291a5e54515c10909600b06cc439fcf48380b66e2cf07fe7af1155b40"
+    },
+    {
+      "path": "proofs/U14/case-11.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "6d3943efd8df872dcfa3d409b83d55d98ea8bc01b4fe513e632ee25692031392"
+    },
+    {
+      "path": "proofs/U14/case-12.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "7d42513fdafe7475b6feac391af15edb0c30d5e78a13d834f732c07383bdcd4e"
+    },
+    {
+      "path": "proofs/U14/case-13.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "85af5598efd981174944ebfd027242b8742552bb95613b438e9ccb6335adb8f8"
+    },
+    {
+      "path": "proofs/U14/case-14.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "fab6d2ab08c315ec2cd2bbb5c572adbea8a22b6a09dbe39820eae7aca50c5f5e"
+    },
+    {
+      "path": "proofs/U14/case-15.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "2f4696655488e10430b1060d15c0cdc626038e320b397c0cc8c0b226280afaa4"
+    },
+    {
+      "path": "proofs/U14/case-16.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "2f4696655488e10430b1060d15c0cdc626038e320b397c0cc8c0b226280afaa4"
+    },
+    {
+      "path": "proofs/U14/case-17.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "1a30c5dd9826ccbee82a536a31020dad7be49967ea645280a650546b9f21958b"
+    },
+    {
+      "path": "proofs/U14/case-18.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "1f9b96ed0c7b669ff80d05c6d52bf0f58277da43e6176e04f01c22e98995323b"
+    },
+    {
+      "path": "proofs/U14/case-19.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "dfc0dad4b8af35fe64fab569bc4d78a9ad4355dd287863a4a359df55f38dde39"
+    },
+    {
+      "path": "proofs/U14/case-20.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "2251e1812ac5ad0dd3bded2b7715b206ce40d4277744eda9810810946378fa76"
+    },
+    {
+      "path": "proofs/U14/case-21.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "8ff15dfc5811de7a5cc2d6786a90d21737b127af8a9ae81ce692cf1e82575ce8"
+    },
+    {
+      "path": "proofs/U14/case-22.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "5c6ab6b09bc51c549f5d9bee36f4528cd3d811d65f55e0763d5b45891f7372df"
+    },
+    {
+      "path": "proofs/U14/case-23.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "dfc0dad4b8af35fe64fab569bc4d78a9ad4355dd287863a4a359df55f38dde39"
+    },
+    {
+      "path": "proofs/U14/case-24.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "0447ed9f0a3aae9c3ddeeb58e12ded75422c4f33f5e08054330d3498ba7e38d0"
+    },
+    {
+      "path": "proofs/U14/case-25.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "9e5c9a8f91b33c710ba729d757d17baa2858423805ed561acbc706c3104a9b96"
+    },
+    {
+      "path": "proofs/U14/case-26.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "a478ac6f46aa2dbf440ce7c8468e5d6c15fad4fc3177c66c1272166068f2ee9d"
+    },
+    {
+      "path": "proofs/U14/case-27.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "5388e2620804ee107a72e9b020d64b83dc1e1c647f2141844fd5be0629346556"
+    },
+    {
+      "path": "proofs/U14/case-28.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "f6db7d5f6d6f3f6871a5bd8d069c4d3c3e984308901e339289e28ea4da34225a"
+    },
+    {
+      "path": "proofs/U14/case-29.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "3b148ea913bd39e77f6cf0db57b4c21e892fe1bfe35d9e9bc41e37cb5f768b17"
+    },
+    {
+      "path": "proofs/U14/case-30.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "abdb4979d1c704ecc244eb2f1170cb1442f5e2e4593491af15399334c3013c46"
+    },
+    {
+      "path": "proofs/U14/case-31.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "55f249be4d9e4a3d4c110fe1c26b5162c410f1dd37edd5d62eb08b3d1736533c"
+    },
+    {
+      "path": "proofs/U14/case-32.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "bcb2b7922c4243b46a2c92754a4f6c66429017c6b22759e9ba372c531cf76124"
+    },
+    {
+      "path": "proofs/U14/case-33.lrat.gz",
+      "raw_bytes": 402464,
+      "raw_sha256": "631ac92da076e4a326679c970c40de299495a17909038f5f836748349d8e4935"
+    }
+  ],
+  "total_bytes_without_manifest": 6564935,
+  "large_proofs": {
+    "DRAT": {
+      "parts": [
+        {
+          "path": "01-input-deletions.drat.gz",
+          "gzip_sha256": "8cd9d1293303634532f638f2df56f28407286b5534789ded58eebc30d3562955",
+          "gzip_bytes": 1626412,
+          "raw_sha256": "abb4be9e0f87bf8cdec9bdf2f0decddba7548db3853a574e5b357e911aca52a1",
+          "raw_bytes": 7063084
+        },
+        {
+          "path": "02-common.drat.gz",
+          "gzip_sha256": "a42d0a1bcaedf8307d9ac0dc8a44eff91c8f783e35089aba0b0630d9bdbd8186",
+          "gzip_bytes": 49750,
+          "raw_sha256": "39d86359655246b78ca6c6e0aff1674f9f599add4f81c3a1ff773009f41f5a47",
+          "raw_bytes": 123423
+        },
+        {
+          "path": "03-definitions-without-cases.drat.gz",
+          "gzip_sha256": "2e2a9daa7c7880e182804747e8896b47f44bf97ad748071636582a0f25da0840",
+          "gzip_bytes": 24704,
+          "raw_sha256": "a45e3465ffff1bb663142f7aa68e558e250018013dc97d2b80b4579696c0bffa",
+          "raw_bytes": 60496
+        },
+        {
+          "path": "04-relations.drat.gz",
+          "gzip_sha256": "eeb72b061c5126ecd3c72005e85d8c1bbdca0a383266fb11ffc69a1b08d444ef",
+          "gzip_bytes": 121670,
+          "raw_sha256": "23f0760e153065203a6e3878c31b2bf974116a978a05f44dad69f3de774740db",
+          "raw_bytes": 391172
+        },
+        {
+          "path": "05-context-cases.drat.gz",
+          "gzip_sha256": "74c2148bbb15b760fc7cbb0eecdc9abc984bc28910b77522af30c9f3742ea150",
+          "gzip_bytes": 563269,
+          "raw_sha256": "d62d45e91dfc295afefe9b516a70bed9b5a42795a7901a887c72a2c9853f2b51",
+          "raw_bytes": 1811744
+        },
+        {
+          "path": "06-physical-cases.drat.gz",
+          "gzip_sha256": "89a67464e2ec2877bf5d8dabf704d1e0c9bebd7ae86f03b110e817983e6368df",
+          "gzip_bytes": 566266527,
+          "raw_sha256": "2e0ab05ad5b53316824a04a6838cd6c7b57c42b096df31fd70d810113e0069d7",
+          "raw_bytes": 1390274134
+        },
+        {
+          "path": "07-proof.drat.gz",
+          "gzip_sha256": "2e47e0403dabb096ea5dad688b1c4d3ad0655e4b7501510b7c9ad869e3e843af",
+          "gzip_bytes": 45279262,
+          "raw_sha256": "fa1189bb442a99e78fa1b906e9017a817782862898ec11011c7064412a2c9c72",
+          "raw_bytes": 649311206
+        }
+      ],
+      "raw_sha256": "ef0a5a3cd19984a3f8973740d247ea229c57044a39d8b4068895e3493b0aa116",
+      "raw_bytes": 2049035259,
+      "format": "binary DRAT; concatenate decompressed parts in listed order"
+    },
+    "LRAT": {
+      "path": "D13.lratb.gz",
+      "gzip_sha256": "8705abc77e86aa52856ef6c36f4bc01037693e7ef57fda96e0bf48f56cbc523a",
+      "gzip_bytes": 1598317453,
+      "raw_sha256": "9b54d5df00f8db04a2d9d51688175ed75df683e54839c28db56fda714fddbd91",
+      "raw_bytes": 5428472887,
+      "format": "binary LRAT"
+    }
+  },
+  "large_location": "Separate companion directory or archive; see README.md. Not in Git.",
+  "success_criteria": {
+    "LRAT": "Exact stdout line s VERIFIED UNSAT, normal exit 0, full stream delivery and matching compressed/raw hashes; exit 0 alone is insufficient.",
+    "light": "Normal exit 0 and work/checks/verification.json status PASS."
+  },
+  "manifest_self_hash": "Excluded to avoid self-reference; Git records manifest.json. All other distributable files are listed."
+}
