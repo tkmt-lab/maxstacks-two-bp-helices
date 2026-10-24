@@ -1,7 +1,7 @@
 {
   "schema": "maxstacks.provenance.v1",
-  "article_input_commit": "bb2e15b71",
-  "article_unchanged": true,
+  "article_input_commit": "244e6d2a0",
+  "article_unchanged": false,
   "assembly_date": "2026-10-24",
   "assembly_is_new_blind_verification": false,
   "adapted_code": [
@@ -30,12 +30,14 @@
   ],
   "article": [
     {
-      "path": "paper/paper-v1.tex",
-      "sha256": "e56bb9bae672b462478485a6ecb9634b54f8fa90c07569f31e17d5b113c9449a"
+      "path": "paper/paper-v1.1.tex",
+      "sha256": "61f851ffeee40c16960f96c7a70acf3173564b8ad79770d6f77c390049e64aa5",
+      "bytes": 35218
     },
     {
-      "path": "paper/paper-v1.pdf",
-      "sha256": "eee05a735b131b00b712f76a2108f3ba69834cd24e539ff22a97a773168dd944"
+      "path": "paper/paper-v1.1.pdf",
+      "sha256": "c36b3aa43ed872fd9f5436195fee33c41238ac45f0ec0720023f2d5dfbf1e82d",
+      "bytes": 106068
     }
   ],
   "validation_input_commit": "57f66b88b11377d74c418ba411cf04b351d9974e",
@@ -59,6 +61,19 @@
     {
       "path": "checkers/verify_lrat.py",
       "sha256": "e4c9d98a3e6390c6f4c57f3a6e888a642af5e8c7fe759261f48ac56c5817b372"
+    }
+  ],
+  "prior_article_input_commit": "bb2e15b71",
+  "article_version": "draft v1.1",
+  "article_change": "Draft label and two Scope sentences only; separate zero-separator D=25 attainability, no maximum-25 claim. Claims, data, proof files and checker code unchanged.",
+  "prior_article": [
+    {
+      "path": "paper/paper-v1.tex",
+      "sha256": "e56bb9bae672b462478485a6ecb9634b54f8fa90c07569f31e17d5b113c9449a"
+    },
+    {
+      "path": "paper/paper-v1.pdf",
+      "sha256": "eee05a735b131b00b712f76a2108f3ba69834cd24e539ff22a97a773168dd944"
     }
   ]
 }

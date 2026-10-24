@@ -19,13 +19,13 @@
     },
     {
       "path": ".zenodo.json",
-      "bytes": 1152,
-      "sha256": "5992db6131b7d6e31305f90c333769d920059c891e9b5603fedd0d96cb71ff71"
+      "bytes": 1154,
+      "sha256": "7f37f9c42ff5cbd215e3f40c3e2005056c1270d5b4314f26769db822f836a49e"
     },
     {
       "path": "AGENTS.md",
-      "bytes": 1741,
-      "sha256": "e8d6106e361923c778ee795dec94aabdd9f87c60c139086c11477e1b0abe5077"
+      "bytes": 1887,
+      "sha256": "1fe2129664751d1771808ef72540e21aaebe6f86710077bec58851cd4dbb8d95"
     },
     {
       "path": "Apache-2.0.txt",
@@ -39,8 +39,8 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 1030,
-      "sha256": "ea12e3ff88f9d9dda352bc666764ff200bde3496d4debab125a961b7f4766fd9"
+      "bytes": 1032,
+      "sha256": "f4e2246472fb01bd6b52798fc71ae646c66cd00aea2c82a6f30f1a3af180aaed"
     },
     {
       "path": "LICENSE",
@@ -49,18 +49,18 @@
     },
     {
       "path": "PROVENANCE.json",
-      "bytes": 2424,
-      "sha256": "960d412557c4cb8b6e0156c89a9f6946e841c11c3270abee18e97078b658a540"
+      "bytes": 3027,
+      "sha256": "21b61331e1b9ab9b9fbbea393dfef3f09140a23a91a66d2d8ab4b43f991cc683"
     },
     {
       "path": "README.md",
-      "bytes": 8998,
-      "sha256": "ec0186bd3fa6f5268d4f19d027104673f25aa0b7c433642083975b073a692e39"
+      "bytes": 9329,
+      "sha256": "82dadf7568d94923fff359e5cee441914875bb4eeb978c66067f895fda90c6e1"
     },
     {
       "path": "VERIFICATION-RECORD.md",
-      "bytes": 6480,
-      "sha256": "d8579b7cd12682ed279abc2bea06e14847029c5d05785c77237f618fc9c23a7c"
+      "bytes": 7093,
+      "sha256": "c8690130a2432b6974cdc746097be414c7b20e621e536d578c849b6ccb08c20d"
     },
     {
       "path": "checkers/check_finite.py",
@@ -131,6 +131,16 @@
       "path": "data/rivals-U14.txt.gz",
       "bytes": 6455,
       "sha256": "e0c6284313eb63216de31a2310aa0ee86fe3de61fda78bbd8af01a5aeb00ba08"
+    },
+    {
+      "path": "paper/paper-v1.1.pdf",
+      "bytes": 106068,
+      "sha256": "c36b3aa43ed872fd9f5436195fee33c41238ac45f0ec0720023f2d5dfbf1e82d"
+    },
+    {
+      "path": "paper/paper-v1.1.tex",
+      "bytes": 35218,
+      "sha256": "61f851ffeee40c16960f96c7a70acf3173564b8ad79770d6f77c390049e64aa5"
     },
     {
       "path": "paper/paper-v1.pdf",
@@ -590,7 +600,7 @@
       "raw_sha256": "631ac92da076e4a326679c970c40de299495a17909038f5f836748349d8e4935"
     }
   ],
-  "total_bytes_without_manifest": 6664807,
+  "total_bytes_without_manifest": 6807790,
   "large_proofs": {
     "DRAT": {
       "parts": [

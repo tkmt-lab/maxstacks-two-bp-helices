@@ -1,9 +1,18 @@
 # Verification record
 
 Author: Tatsuhiko Takimoto. Package assembly: literature-role Codex, 24 October
-2026 JST. Article input revision: `bb2e15b71`; PDF and TeX are unchanged draft v1.
+2026 JST. Original article input revision: `bb2e15b71` (draft v1). The current
+article is draft v1.1, edited from research revision `244e6d2a0` with only a
+draft-label change and two Scope sentences about a separate zero-separator
+variant admitting a design at D=25. No maximum-25 or exclusion-above-25 claim
+is included. The fixed-family theorem and its certificates are unchanged.
 Packaging is subsequent integration with research and verification records
 available. It is not a new blind derivation or independent human review.
+
+The v1.1 Scope addition received one fresh AI reading with only its PDF, TeX
+and v1-to-v1.1 diff: ACCEPT for overclaiming and ACCEPT for distinguishing
+the variant from the fixed-family bound 12. This reading did not independently
+verify the D=25 design; that observation is outside this package's certificates.
 
 ## Prior evidence used by the article
 
