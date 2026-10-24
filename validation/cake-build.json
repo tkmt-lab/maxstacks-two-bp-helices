@@ -1,0 +1,18 @@
+{
+  "revision": "a36874a8b750b43fe4b385b8ddbf5b033e46a3fa",
+  "retrieved_and_built_utc": "2026-10-24T01:31:19.054516+00:00",
+  "seconds": 1.7114061249885708,
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "target": "cake_lpr_arm8",
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+  "source_hashes": {
+    "Makefile": "57f5c407a9274560d8cfe31d60ee8095ac4a8046bbe960b9d706d37006d3ba10",
+    "basis_ffi.c": "8e30d84fdcb2177aa5571d7fa6661a2fae5ecfd56baa0ce49c65f9233a9f87cb",
+    "cake_lpr.S": "2f3af32d55083839b3fa0e693afd817679c0b8944bef41def05a8b0ec72b7d4a",
+    "cake_lpr_arm8.S": "95b64883edc0cb09feedbcb1ebec233e2490f5b458fdda9dc29c212ed916f00c"
+  },
+  "binary_sha256": "2fee767af4478ed817f8bdf6feea5866e5e59f1f67c2a4477e98ee961612881d",
+  "binary_bytes": 546520,
+  "proof_rebuild": false,
+  "upstream_manifest_note": "basis_ffi.c hash in upstream cake_lpr.sha256 is stale at this commit; exact pinned git blob hash above is required."
+}

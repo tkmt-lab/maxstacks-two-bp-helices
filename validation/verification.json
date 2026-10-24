@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "files_checked": 64,
+  "elapsed_seconds": 12.763764166040346,
+  "scope": "Hashes, exhaustive small DP controls, D12, rivals, exact F/U14 reconstruction, all case hashes, family generation, word coverage, symmetries, finite mapping supplements, UCP traces.",
+  "excludes": "LRAT replay and general-D geometric proof; run verify_lrat.py and read the article."
+}

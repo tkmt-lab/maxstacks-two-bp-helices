@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "validated_utc": "2026-10-24T01:35:58.484346+00:00",
+  "validation_input_commit": "57f66b88b11377d74c418ba411cf04b351d9974e",
+  "checker_code_unchanged_after_validation": true,
+  "light_seconds": 12.763764166040346,
+  "U14_cases": 34,
+  "U14_sum_seconds": 2.2182115018367767,
+  "D13_seconds": 223.15437458304223,
+  "D13_maxrss_bytes": 4295933952,
+  "D13_full_stream_hash_matches": true,
+  "DRAT_replayed_in_packaging": false,
+  "DRAT_gzip_and_raw_hashes_checked": true,
+  "Linux_x64_CI_executed": false,
+  "notes": [
+    "control-invalid.json has status FAIL by design: its missing exact success line is required for this negative control.",
+    "Final additions after the validation input commit are documentation, manifest maintenance and these records; checkers and mathematical inputs stay unchanged."
+  ]
+}

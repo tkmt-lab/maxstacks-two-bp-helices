@@ -49,8 +49,8 @@
     },
     {
       "path": "PROVENANCE.json",
-      "bytes": 1643,
-      "sha256": "d3fc172124f49ea768c79648e9916664d8665b32a7a69c708148e58cea1bf297"
+      "bytes": 2424,
+      "sha256": "960d412557c4cb8b6e0156c89a9f6946e841c11c3270abee18e97078b658a540"
     },
     {
       "path": "README.md",
@@ -59,8 +59,8 @@
     },
     {
       "path": "VERIFICATION-RECORD.md",
-      "bytes": 5372,
-      "sha256": "e6db40dffda30d0fcaf8847ef1d177f504063777b9fad2b86805a48935326104"
+      "bytes": 6480,
+      "sha256": "d8579b7cd12682ed279abc2bea06e14847029c5d05785c77237f618fc9c23a7c"
     },
     {
       "path": "checkers/check_finite.py",
@@ -141,6 +141,11 @@
       "path": "paper/paper-v1.tex",
       "bytes": 34939,
       "sha256": "e56bb9bae672b462478485a6ecb9634b54f8fa90c07569f31e17d5b113c9449a"
+    },
+    {
+      "path": "proofs/D13-README.md",
+      "bytes": 3540,
+      "sha256": "b55d33218f558d6883b342a42a00e29336aed547f84c5b3ece583bfeceb2c3d8"
     },
     {
       "path": "proofs/U14/case-00.lrat.gz",
@@ -319,8 +324,88 @@
     },
     {
       "path": "tools/update_manifest.py",
-      "bytes": 1608,
-      "sha256": "88ece173eff28a3d5f1e1819c83d6e8757d5a5964e79cf04467f798d82178ea5"
+      "bytes": 1862,
+      "sha256": "7323d24e5d9349c3fb11ceecf63ecc8f2b1a078627285434a9099e9d949902cc"
+    },
+    {
+      "path": "validation/D13.json",
+      "bytes": 784,
+      "sha256": "64f2b577cbbbde5e89776659837b9469b02d521e116b01478c70237539c6e546"
+    },
+    {
+      "path": "validation/D13.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "validation/D13.stdout.txt",
+      "bytes": 17,
+      "sha256": "c680d3bd38a04c7beee7d54999f8f00b43051f75a53cf2bd170ae0cc5f99eb5f"
+    },
+    {
+      "path": "validation/U14-summary.json",
+      "bytes": 29785,
+      "sha256": "da0477caad66fba5340b386c6ae878cba21a23cd071c382f99adb43236b5cbff"
+    },
+    {
+      "path": "validation/cake-build.json",
+      "bytes": 1081,
+      "sha256": "1bdb0647a2213ace0e58230336e90a4b2785b258543411dede5dfa7bed074449"
+    },
+    {
+      "path": "validation/control-invalid.json",
+      "bytes": 770,
+      "sha256": "79d486d84e8ccab6460d41995a4f95a71b1e6643890a2d3b320a1a7876d9a046"
+    },
+    {
+      "path": "validation/control-valid.json",
+      "bytes": 765,
+      "sha256": "31244c45ccd19953fb8cf19baaa9a76ada31215500d57dd1dff7338d0d1d6e0e"
+    },
+    {
+      "path": "validation/dp-model.json",
+      "bytes": 317,
+      "sha256": "554d94e4dda9ccdbb4a864b872f76a7e60e1c829a2806198a9fdd51fe3a88ae8"
+    },
+    {
+      "path": "validation/embedding-examples.json",
+      "bytes": 9120,
+      "sha256": "fbafd0b1f3379a7aab21728b5084c30d26628e574a94510284d216025b558d39"
+    },
+    {
+      "path": "validation/finite-checks.json",
+      "bytes": 7195,
+      "sha256": "79a17c03eb6768d6038ee67243eb21d629894078f1d533fee41482439a579a87"
+    },
+    {
+      "path": "validation/summary.json",
+      "bytes": 836,
+      "sha256": "06d121b35db301d28f892ee2bdcf72a37eaa508e9ad94eabef3362f20d4da630"
+    },
+    {
+      "path": "validation/symmetries.json",
+      "bytes": 1080,
+      "sha256": "b3a0db4f61529c48714b6b58e4af39046671448b977d92a553d726b80d96c4db"
+    },
+    {
+      "path": "validation/ucp-cases.json",
+      "bytes": 3529,
+      "sha256": "cca1b9aa13d25b4fed42904b0af819e7a91bf56929b73d1221ae1f04a4577043"
+    },
+    {
+      "path": "validation/upper-checks.json",
+      "bytes": 5741,
+      "sha256": "6a0284be77413d3bef588ebb3cf6a077012b8b2b11fc288d9e8b530da9dc221d"
+    },
+    {
+      "path": "validation/verification.json",
+      "bytes": 384,
+      "sha256": "12e10689be722644fcc464f10443c97cc9e05dbce9e247a996183a8539b5ac1d"
+    },
+    {
+      "path": "validation/word-coverage.json",
+      "bytes": 32785,
+      "sha256": "c09075fa1bdcf7786b30dd97b92b127da0d006b0bc8b3e190a9bb40f8facbb96"
     }
   ],
   "expanded_gzip": [
@@ -505,7 +590,7 @@
       "raw_sha256": "631ac92da076e4a326679c970c40de299495a17909038f5f836748349d8e4935"
     }
   ],
-  "total_bytes_without_manifest": 6564935,
+  "total_bytes_without_manifest": 6664807,
   "large_proofs": {
     "DRAT": {
       "parts": [
@@ -573,6 +658,18 @@
     }
   },
   "large_location": "Separate companion directory or archive; see README.md. Not in Git.",
+  "large_companion_metadata": [
+    {
+      "path": "README.md",
+      "sha256": "b55d33218f558d6883b342a42a00e29336aed547f84c5b3ece583bfeceb2c3d8",
+      "bytes": 3540
+    },
+    {
+      "path": "large-proofs.json",
+      "sha256": "a6856566e8da76cfcea6067e57b77ded0875db04c2cbc143896ef4a748657940",
+      "bytes": 2645
+    }
+  ],
   "success_criteria": {
     "LRAT": "Exact stdout line s VERIFIED UNSAT, normal exit 0, full stream delivery and matching compressed/raw hashes; exit 0 alone is insufficient.",
     "light": "Normal exit 0 and work/checks/verification.json status PASS."

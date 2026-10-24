@@ -1,0 +1,12 @@
+{
+  "small_sequences": 22485,
+  "exhaustive_through_n": 7,
+  "random_per_length_8_to_12": 128,
+  "D12": {
+    "score": 12,
+    "count": 1,
+    "witness": "((.((.)).((.)).((.)).((.)).((.)).((.)).((.)).((.)).((.)).((.)).((.)).))"
+  },
+  "normalization_alphabet_checks": true,
+  "elapsed_seconds": 0.16054616693872958
+}

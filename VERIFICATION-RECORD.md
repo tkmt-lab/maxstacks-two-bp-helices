@@ -37,9 +37,25 @@ The package checks reproduce the D12 result, all rival and formula checks,
 U14 family reconstruction, coverage, symmetries, UCP and finite mapping supplements.
 All original large gzip hashes and the expanded concatenated DRAT hash were
 rechecked after APFS clone placement. This packaging task does not rerun DRAT.
-Clean-clone and LRAT measurements are added below after execution. Stored
-reports are records of execution; rerunning the commands remains necessary
-for a new machine's check.
+The fresh local clone of `57f66b8` passed all light checks in 12.764 seconds.
+It fetched and built the pinned official ARM checker in 1.711 seconds. All 34
+U14 LRATs passed in 2.218 seconds total; the valid control passed and the missing-
+hint control was rejected even though it exited 0. Optimized Python was refused.
+
+The same clone replayed the stored D13 LRAT in 223.154 seconds, with peak child
+RSS 4,295,933,952 bytes, a 4,096 MB heap and 128 MB stack. It delivered all
+5,428,472,887 raw bytes, matched both gzip/raw hashes and obtained the exact
+success line with normal exit 0. The run began at `2026-10-24T01:31:46.504302+00:00`.
+No other heavy package check ran concurrently. The six checkers and all
+mathematical inputs remain unchanged from the validated clone.
+
+Detailed records are in [validation/summary.json](validation/summary.json).
+`control-invalid.json` intentionally records FAIL for a rejected proof; this
+is the expected negative control, not a failed theorem certificate. Final
+package changes add documentation, manifest maintenance and these records.
+The final manifest and file inventory are checked separately. Linux x64 CI
+is specified but has not run on a hosted service. Stored reports document
+execution; rerun the commands for a new machine's check.
 
 ## Official checker and remaining trust
 

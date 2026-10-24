@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "label": "D13",
+  "started_utc": "2026-10-24T01:31:46.504302+00:00",
+  "seconds": 223.15437458304223,
+  "returncode": 0,
+  "exact_success_line": true,
+  "raw_sha256": "9b54d5df00f8db04a2d9d51688175ed75df683e54839c28db56fda714fddbd91",
+  "raw_bytes": 5428472887,
+  "bytes_sent": 5428472887,
+  "broken_pipe": false,
+  "checker_sha256": "2fee767af4478ed817f8bdf6feea5866e5e59f1f67c2a4477e98ee961612881d",
+  "cnf_sha256": "4f8100bbe4362bf45db9b4be068eb115bf1c48c3f556ce5c3bceff1e7f5a4a6c",
+  "gzip_sha256": "8705abc77e86aa52856ef6c36f4bc01037693e7ef57fda96e0bf48f56cbc523a",
+  "command": [
+    "cake_lpr",
+    "--CML_HEAP_SIZE=4096",
+    "--CML_STACK_SIZE=128",
+    "D13-rebuilt.cnf",
+    "/dev/stdin"
+  ],
+  "child_maxrss": 4295933952,
+  "maxrss_unit": "bytes"
+}

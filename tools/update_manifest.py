@@ -15,6 +15,7 @@ def main():
        'total_bytes_without_manifest':sum(f['bytes'] for f in files),
        'large_proofs':json.loads((ROOT/'data/large-proofs.json').read_text()),
        'large_location':'Separate companion directory or archive; see README.md. Not in Git.',
+       'large_companion_metadata':[{'path':name,'sha256':hashlib.sha256((ROOT/local).read_bytes()).hexdigest(),'bytes':(ROOT/local).stat().st_size} for name,local in [('README.md','proofs/D13-README.md'),('large-proofs.json','data/large-proofs.json')]],
        'success_criteria':{'LRAT':'Exact stdout line s VERIFIED UNSAT, normal exit 0, full stream delivery and matching compressed/raw hashes; exit 0 alone is insufficient.',
                            'light':'Normal exit 0 and work/checks/verification.json status PASS.'},
        'manifest_self_hash':'Excluded to avoid self-reference; Git records manifest.json. All other distributable files are listed.'}

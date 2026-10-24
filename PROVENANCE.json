@@ -37,5 +37,28 @@
       "path": "paper/paper-v1.pdf",
       "sha256": "eee05a735b131b00b712f76a2108f3ba69834cd24e539ff22a97a773168dd944"
     }
+  ],
+  "validation_input_commit": "57f66b88b11377d74c418ba411cf04b351d9974e",
+  "checkers_at_validation": [
+    {
+      "path": "checkers/check_finite.py",
+      "sha256": "01caa657ff970988bdb1f2bd7608cff9e0fd217950af981a2262a81249cdfc3d"
+    },
+    {
+      "path": "checkers/check_upper.py",
+      "sha256": "b1367fe64b4bd1c0287924b6b9f54e6411ef4cbe63385f6b21cef847513761e1"
+    },
+    {
+      "path": "checkers/core.py",
+      "sha256": "55a7d4e46e6e8ff433b985362c1501dc93e95dedf85201f607064640a71a6cae"
+    },
+    {
+      "path": "checkers/verify.py",
+      "sha256": "151446353159b7a4b8b78de6d3206bbb704cc7a6817b95a66265ad462c04d6e5"
+    },
+    {
+      "path": "checkers/verify_lrat.py",
+      "sha256": "e4c9d98a3e6390c6f4c57f3a6e888a642af5e8c7fe759261f48ac56c5817b372"
+    }
   ]
 }

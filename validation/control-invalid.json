@@ -1,0 +1,24 @@
+{
+  "status": "FAIL",
+  "label": "control-invalid",
+  "started_utc": "2026-10-24T01:31:28.622697+00:00",
+  "seconds": 0.005619040923193097,
+  "returncode": 0,
+  "exact_success_line": false,
+  "raw_sha256": "fb946d508809049ad54e48152bff9a3314edbbbd79272841f6cc5ea55f895a7b",
+  "raw_bytes": 33,
+  "bytes_sent": 33,
+  "broken_pipe": false,
+  "checker_sha256": "2fee767af4478ed817f8bdf6feea5866e5e59f1f67c2a4477e98ee961612881d",
+  "cnf_sha256": "bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58",
+  "gzip_sha256": "d3e4d974f5e89dfa26a618b5eae549fc5c98eba722bffb2f684d44d8ef8682db",
+  "command": [
+    "cake_lpr",
+    "--CML_HEAP_SIZE=64",
+    "--CML_STACK_SIZE=128",
+    "xor.cnf",
+    "/dev/stdin"
+  ],
+  "child_maxrss": 1867776,
+  "maxrss_unit": "bytes"
+}
