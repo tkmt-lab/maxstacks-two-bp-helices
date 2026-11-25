@@ -118,7 +118,7 @@ conditions sufficient for the direct enumeration above.
 
 The distributed CNF has stable per-clause literal deduplication; clause
 numbering, order and Boolean meaning are preserved. The supplied binary
-DRAT and binary LRAT are unchanged. `normalization.json` gives hashes and
+DRAT and binary LRAT are unchanged. `A26/normalization.json` gives hashes and
 counts. Official DRAT-trim accepts the former with `s VERIFIED`; official
 cake_lpr accepts the latter with `s VERIFIED UNSAT`. A deduplicated text
 DRAT copy additionally passes warning-strict RUP-only checking while keeping

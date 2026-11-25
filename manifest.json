@@ -594,8 +594,8 @@
     },
     {
       "path": "variants/PROOF-A25.md",
-      "bytes": 7404,
-      "sha256": "c8e9be966095e8fdba11a5147c2feb7c5a357a27e465b47198aa0fdfd3854847"
+      "bytes": 7408,
+      "sha256": "79bb83e458747967d7d670c2aafc134ad0295b285fa6693f8916608320e17d89"
     },
     {
       "path": "variants/PROVENANCE.json",
@@ -805,7 +805,7 @@
       "raw_sha256": "631ac92da076e4a326679c970c40de299495a17909038f5f836748349d8e4935"
     }
   ],
-  "total_bytes_without_manifest": 7348247,
+  "total_bytes_without_manifest": 7348251,
   "large_proofs": {
     "DRAT": {
       "parts": [
