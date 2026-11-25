@@ -1,6 +1,6 @@
 # Twelve two-base-pair helices in the maxStacks model
 
-**Package 1.1.0 — 2026-11-12. Article Version 1.4.**
+**Package 1.1.0 — 2026-11-25. Article Version 1.4.**
 All-versions DOI: [10.5281/zenodo.23679267](https://doi.org/10.5281/zenodo.23679267).
 
 In the maxStacks model, the maximum number of two-base-pair helices in the
@@ -259,4 +259,4 @@ Research contact: [research@tatsuhikotakimoto.com](mailto:research@tatsuhikotaki
 See [CITATION.cff](CITATION.cff). Code is Apache-2.0; original prose, data and
 proof certificates are CC BY 4.0. Full license texts and third-party boundaries
 are in [LICENSE](LICENSE). Version 1.0.0 remains archived unchanged.
-See [CHANGELOG.md](CHANGELOG.md) for package 1.1.0 (2026-11-12).
+See [CHANGELOG.md](CHANGELOG.md) for package 1.1.0 (2026-11-25).

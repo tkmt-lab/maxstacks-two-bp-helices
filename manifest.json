@@ -20,12 +20,12 @@
     {
       "path": ".zenodo.json",
       "bytes": 1473,
-      "sha256": "34b4378ea497172d2277f4d523a3dc41408d54f90b0b67b1abcf3bcd77280073"
+      "sha256": "df4571a6964cbeca6f5c3c413b2385b3c1f4e59b9fd2467c2bb7f853d2f3a1f6"
     },
     {
       "path": "AGENTS.md",
       "bytes": 1947,
-      "sha256": "eac6b04ecab1247604aff484f3cd20c1c07c9ea733a1329f8da7b088753a2d44"
+      "sha256": "8f3056d7795dc20970b229e21856144c38b3235e255bdea3b7008ad02a35912e"
     },
     {
       "path": "Apache-2.0.txt",
@@ -40,12 +40,12 @@
     {
       "path": "CHANGELOG.md",
       "bytes": 1342,
-      "sha256": "ffce05546d2affa35f4facfc45121088a31e3e131a7633d193c1572c54f31fff"
+      "sha256": "f6c6e6ee386d21adfb9b1a80c67aeab8f4acdde1c0030e3783bd533bc98554bd"
     },
     {
       "path": "CITATION.cff",
       "bytes": 1179,
-      "sha256": "c44215c09a0a6f991649c9d48cbb04cd6ff26f1945a3fb4b489623ac84a9e552"
+      "sha256": "059dc3b1a37b3b7c9c6b2e7c09c527d5f5b50d279c21cafce05c8a3821a91870"
     },
     {
       "path": "LICENSE",
@@ -60,7 +60,7 @@
     {
       "path": "README.md",
       "bytes": 13302,
-      "sha256": "7b6deef1b5ea02f65d17e9f83ab30ccbfd5b40bc94296cee1593d7058731b1ae"
+      "sha256": "ac93c5893450b23255cf52507d3344a07c86a5aa529dfa4c688a3cb43861df15"
     },
     {
       "path": "VERIFICATION-RECORD.md",
@@ -605,7 +605,7 @@
     {
       "path": "variants/README.md",
       "bytes": 6440,
-      "sha256": "d3e951c7566a6d5a6850593588bc93abfb6ccf6de5ebaa2908ca56ebddfe9eed"
+      "sha256": "a566032952a627ad6194b5671c0442f32373c45c1c7e240b47a73794e9e967dd"
     },
     {
       "path": "variants/designs/A-D25.json",

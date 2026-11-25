@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1.0 — 2026-11-12
+## 1.1.0 — 2026-11-25
 
 - Keep only the current article in the distribution; preserve earlier manuscripts
   and diffs in Git history. Replace private source paths with public source IDs

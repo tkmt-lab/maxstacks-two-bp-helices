@@ -1,6 +1,6 @@
 # Supplement: zero separators and three-base hairpins
 
-**Package 1.1.0 — 2026-11-12.**
+**Package 1.1.0 — 2026-11-25.**
 All-versions DOI: [10.5281/zenodo.23679267](https://doi.org/10.5281/zenodo.23679267).
 
 The zero-separator, one-base-hairpin family has maximum designable D **25**.
@@ -120,7 +120,7 @@ A26 encoding has not been independently checked; neither the Python enumeration
 nor uniqueness DP is formally verified. Package integration is not a new blind
 derivation, and this work has not undergone independent human peer review.
 
-This supplement is included in package `v1.1.0` (2026-11-12); use the main
+This supplement is included in package `v1.1.0` (2026-11-25); use the main
 README's versioned acquisition command. These files are included from v1.1.0 onward. The A26 files are included in this supplement and require none
 of the separate large D13 attachments.
 
