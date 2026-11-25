@@ -2,7 +2,7 @@
 """Run every small, exact package check. SPDX-License-Identifier: Apache-2.0."""
 from core import *
 import time
-import check_finite, check_upper
+import check_finite, check_upper, check_variants
 
 def inventory():
     m=json.loads((ROOT/'manifest.json').read_text())
@@ -22,9 +22,9 @@ def inventory():
 
 def main():
     t=time.monotonic(); count=inventory(); print('File and expanded gzip hashes PASS',count,flush=True)
-    check_finite.run(); check_upper.run()
+    check_finite.run(); check_upper.run(); check_variants.run()
     save('verification.json',{'status':'PASS','files_checked':count,'elapsed_seconds':time.monotonic()-t,
-        'scope':'Hashes, exhaustive small DP controls, D12, rivals, exact F/U14 reconstruction, all case hashes, family generation, word coverage, symmetries, finite mapping supplements, UCP traces.',
+        'scope':'Hashes, exhaustive small DP controls, D12, rivals, exact F/U14 reconstruction, all case hashes, family generation, word coverage, symmetries, finite mapping supplements, UCP traces; variant DP controls, three designs and all 86,156 A25 state-set exclusions.',
         'excludes':'LRAT replay and general-D geometric proof; run verify_lrat.py and read the article.'})
     print('PASS: all light checks; LRAT replay is a separate command.',flush=True)
 

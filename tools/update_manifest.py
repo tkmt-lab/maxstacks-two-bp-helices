@@ -11,7 +11,7 @@ def main():
         raw=p.read_bytes();files.append({'path':rel.as_posix(),'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest()})
         if p.suffix=='.gz':
             plain=gzip.decompress(raw);expanded.append({'path':rel.as_posix(),'raw_bytes':len(plain),'raw_sha256':hashlib.sha256(plain).hexdigest()})
-    m={'schema':'maxstacks.manifest.v1','version':'1.0.0','files':files,'expanded_gzip':expanded,
+    m={'schema':'maxstacks.manifest.v1','version':'1.1.0','files':files,'expanded_gzip':expanded,
        'total_bytes_without_manifest':sum(f['bytes'] for f in files),
        'large_proofs':json.loads((ROOT/'data/large-proofs.json').read_text()),
        'large_location':'Separate companion directory or archive; see README.md. Not in Git.',

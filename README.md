@@ -8,7 +8,7 @@ T_D = '((.' + '((.)).' * (D-1) + '))',   D >= 2,
 
 the largest designable D is **12**. A 71-base sequence uniquely designs T₁₂;
 T_D has no design for every D≥13. This package contains the
-[article, Version 1.2](paper/paper-v1.2.pdf), its [TeX source](paper/paper-v1.2.tex),
+[article, Version 1.3](paper/paper-v1.3.pdf), its [TeX source](paper/paper-v1.3.tex),
 the [claim specification](claims/STATEMENT-A.md), data and reproducible checks.
 
 The question and maxStacks framework come from **Théo Boury, Laurent Bulteau
@@ -29,9 +29,34 @@ This differs from the usual minimum of three unpaired bases in RNA models.
 The target has one enclosing two-base-pair helix and D−1 inner two-base-pair
 helices, with one-base hairpins and separators.
 
-The result concerns this fixed family. It does not classify every D≤12,
-arbitrary RNA trees, the three-base-hairpin model, the Turner energy model
-or experimental RNA. No priority or human peer-review claim is made.
+The article result concerns this fixed family. It does not classify every D≤12
+or arbitrary RNA trees. Package **1.1.0** adds the separate [variants supplement](variants/README.md):
+
+- **A**, zero separators, one-base hairpins, **j-i>=2**: maximum designable D is
+  exactly **25**, with the 124-base design and exclusion of every D>=26.
+- **a** and **b**, three-base hairpins, **j-i>=4**: designs at **16** and **21**
+  helices respectively, as **lower bounds only**.
+
+D counts the enclosing helix. These supplement results do not change the
+article theorem. No Turner-model, experimental, priority or human peer-review
+claim is made.
+
+## Obtain the preparation
+
+Version 1.1.0 is currently a local repository preparation supplied for review;
+there is no public download for it yet. The v1.0.0 archive does not contain
+the new supplement. Given the supplied local Git repository, check a clean
+copy with:
+
+```sh
+git clone --no-hardlinks /path/to/supplied/maxstacks-two-bp-helices maxstacks-check
+cd maxstacks-check
+```
+
+Use the exact supplied commit when comparing results. A release maintainer
+must add the versioned v1.1.0 repository/archive link before distribution.
+The following commands run in that clone. Only the optional D13 replay needs
+the separately archived large files; all added A26 files are already included.
 
 ## Run the light checks
 
@@ -61,6 +86,11 @@ ignored `work/`. The programs reconstruct, rather than trust stored verdicts:
 - Unit-propagation contradictions for all 34 U14 cases, independently replayed
   from emitted traces; 50,199 finite embedding examples supplement the
   general geometric proof in [RIVAL-UPPER.md](claims/RIVAL-UPPER.md).
+
+- The separate variant designs, exact optimum/count/target tests, exhaustive
+  small gap-4 DP controls, all 1,024 adjacent-state cases and all 86,156 A25
+  state-set exclusions. Details and separate certificate commands are in
+  [variants/README.md](variants/README.md).
 
 These finite computations do not mechanize the general-D geometric argument
 or normalization proof. The Python programs are not formally verified.
@@ -102,8 +132,13 @@ files totalling **2,212,249,047 bytes**: seven DRAT parts (613,931,594 bytes)
 and one LRAT (1,598,317,453 bytes). They are outside Git. Their filenames,
 compressed/expanded hashes and the DRAT order are in
 [data/large-proofs.json](data/large-proofs.json) and [manifest.json](manifest.json).
-The large proofs will be distributed separately as release attachments.
-No download URL or publication identifier has been assigned to this local package.
+The unchanged large D13 proofs are available as eight separate attachments
+at the [v1.0.0 archive](https://doi.org/10.5281/zenodo.23679268).
+Download the seven named DRAT gzip parts and `D13.lratb.gz` to the companion
+directory, preserving their names; their checksums are in `data/large-proofs.json`.
+They are not needed for the light checks or the added A26 proof.
+The v1.0.0 package was archived as [DOI 10.5281/zenodo.23679268](https://doi.org/10.5281/zenodo.23679268).
+This local v1.1.0 preparation has no new release identifier.
 
 With the companion directory beside this repository, run:
 
@@ -132,7 +167,8 @@ For the shell form, inspect both normal pipeline termination and the exact
 The companion README also gives the seven-part binary DRAT replay order.
 A DRAT replay is optional; this package preparation verifies its hashes and
 uses the archived LRAT for the required full-F replay. It does not claim a new
-DRAT replay. CI runs the light checks and all U14 LRATs; D13 remains a local check.
+DRAT replay. CI specifies the light checks, all U14 LRATs, and the added A26 LRAT/DRAT
+checks; D13 remains a separate local check. Hosted CI has not run for v1.1.0.
 
 ## Assurance and provenance
 
@@ -164,18 +200,18 @@ Git records the manifest itself. Never refresh hashes to conceal an unexplained
 mismatch. After a reviewed intentional edit, use `python3 -B tools/update_manifest.py`
 and rerun the relevant checks.
 
-The included PDF and TeX are Version 1.2. Relative to draft v1.1, this version
-clarifies legal structures, DP scores and counts, the alphabet order, and the
-actual companion filenames. A footnote supplies the 124-base sequence and target
-for the separate zero-separator D=25 example, outside the article's claims and
-certificates; it makes no maximum or priority claim. The theorem, mathematical
-data, proof files and checker programs are unchanged. Earlier drafts v1 and
-v1.1 are retained in `paper/`. To rebuild the article with
-an existing LaTeX installation, use its preamble's packages and run `pdflatex`
-twice, sending output to `work/paper/`. PDF bytes may differ across engines.
-The certificate checks do not require a TeX installation.
+The included current PDF and TeX are **Version 1.3**. Relative to v1.2, only
+version/date metadata, the D=25 footnote's package reference and one Scope
+sentence about the gap-4 lower designs change. The 124-base sequence, main
+theorem, proofs and tables are unchanged; the maximum 25 is a supplement
+result, not a theorem of the article. Earlier drafts are retained in `paper/`,
+and [the exact diff](paper/v1.2-to-v1.3.diff) records the edit. To rebuild
+with an existing LaTeX installation, use the preamble's packages and run
+`pdflatex` twice, sending output to `work/paper/`. PDF bytes may differ
+across engines. Certificate checks do not need a TeX installation.
 
-Tatsuhiko Takimoto. Package version **1.0.0**; article **Version 1.2**.
+Tatsuhiko Takimoto. Package version **1.1.0**; article **Version 1.3**.
 See [CITATION.cff](CITATION.cff). Code is Apache-2.0; original prose, data and
 proof certificates are CC BY 4.0. Full license texts and third-party boundaries
-are in [LICENSE](LICENSE). This local package has not been published.
+are in [LICENSE](LICENSE). Version 1.0.0 remains archived unchanged. Version 1.1.0 is prepared locally
+and has not been pushed or published.

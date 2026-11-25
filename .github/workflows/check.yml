@@ -19,6 +19,12 @@ jobs:
         run: nice -n 10 python3 -B tools/build_cake.py
       - name: Check all 34 U14 LRATs
         run: nice -n 10 python3 -B checkers/verify_lrat.py --checker work/cake_lpr/cake_lpr --scope U14
+      - name: Replay the added A26 LRAT and rejection control
+        run: nice -n 10 python3 -B checkers/verify_variants_proofs.py --checker work/cake_lpr/cake_lpr
+      - name: Build pinned DRAT-trim and replay both A26 proofs
+        run: |
+          nice -n 10 python3 -B tools/build_drat.py
+          nice -n 10 python3 -B checkers/verify_variants_proofs.py --checker work/cake_lpr/cake_lpr --drat work/drat-trim/drat-trim
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -26,5 +32,7 @@ jobs:
           path: |
             work/checks/*.json
             work/lrat/
+            work/variants-proofs/
+            work/drat-trim/build.json
             work/cake-build.json
             work/cake-build.log

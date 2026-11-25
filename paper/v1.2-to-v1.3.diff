@@ -1,0 +1,25 @@
+--- paper-v1.2.tex
++++ paper-v1.3.tex
+@@ -19,7 +19,7 @@
+ \title{Twelve two-base-pair helices: an exact designability bound\protect\\
+ for a fixed family in the maxStacks model}
+ \author{Tatsuhiko Takimoto}
+-\date{25 October 2026 \quad Version 1.2}
++\date{28 October 2026 \quad Version 1.3}
+ \begin{document}
+ \maketitle
+ \begin{abstract}
+@@ -629,11 +629,11 @@
+ GCCAGGGGACCGGACCUUAAAACCGUACCGU\allowbreak{}
+ UGCCAUGCCAGACUCGACUCAUCAUAUCAUU\allowbreak{}
+ ACUAUACUACUCAGCUCAGAAAUUGCCGCGU}
+-designs the target \texttt{((} followed by 24 copies of \texttt{((.))} and then \texttt{))}. This example can be checked with any maxStacks dynamic program implementing the model of Section~\ref{sec:model}. It is outside this article's claims and certificates.} This variant is being
++designs the target \texttt{((} followed by 24 copies of \texttt{((.))} and then \texttt{))}. The \texttt{variants/} supplement of certificate-package version 1.1.0 contains certificates and a prose proof that the maximum for this zero-separator, one-base-hairpin family is exactly 25. This result is separate from the theorem of this article.} This variant is being
+ studied separately and is outside the claims and certificates of the
+ present paper. If hairpins must contain three unpaired nucleotides, these
+ targets themselves cease to be legal; lengthening them defines a
+-different family. No conclusion about the Turner energy model,
++different family. The same package supplement gives designs with 16 and 21 helices for two such three-base-hairpin families under $j-i\geq4$, as lower bounds only. No conclusion about the Turner energy model,
+ physical molecules or experimental folding follows from this theorem.
+ The exact value is the proposed contribution within the reviewed
+ literature; a priority claim is not established by a negative search.

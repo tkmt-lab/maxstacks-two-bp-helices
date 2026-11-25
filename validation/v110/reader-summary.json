@@ -1,0 +1,16 @@
+{
+  "overall": "MINOR",
+  "overclaims": "ACCEPT",
+  "models_including_competitors": "ACCEPT",
+  "reproduction": "MINOR",
+  "major": 0,
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "thread_id": "01a18169-121f-7471-bfad-f9af6571c0ef",
+  "invocations": 1,
+  "resume": 0,
+  "read_only": true,
+  "restricted_six_files": true,
+  "independent_scientific_verification": false,
+  "verdict_sha256": "f398f96fa9dd9dd45a9b3f3432ad6a62fc5305980c572118afd47b1cc61413e8"
+}

@@ -2,16 +2,54 @@
 
 Author: Tatsuhiko Takimoto. Package assembly: literature-role Codex, 24 October
 2026 JST. Original article input revision: `bb2e15b71` (draft v1). The current
-article is Version 1.2, edited from research revision `1dc1d3883` (draft v1.1).
+article is Version 1.3. The following Version 1.2 notes are historical;
+Version 1.2 was edited from research revision `1dc1d3883` (draft v1.1).
 Version 1.2 changes the version label, clarifies definitions and actual package references, and adds the separate D=25 witness footnote; the theorem, proof, tables and certificate hashes are unchanged.
-No maximum-25, exclusion-above-25 or priority claim is included.
+No maximum-25, exclusion-above-25 or priority claim was included in Version 1.2.
 Packaging is subsequent integration with research and verification records
 available. It is not a new blind derivation or independent human review.
 
 The v1.1 Scope addition received one fresh AI reading with only its PDF, TeX
 and v1-to-v1.1 diff: ACCEPT for overclaiming and ACCEPT for distinguishing
 the variant from the fixed-family bound 12. This reading did not independently
-verify the D=25 design; that observation is outside this package's certificates.
+verify the D=25 design; that observation was outside the v1.0.0 package's certificates.
+
+## Package 1.1.0 / article 1.3 (28 October 2026)
+
+The article edit is limited to version/date metadata, the D25 footnote's
+reference to the variants supplement, and one Scope sentence pointing to
+the three-base-hairpin lower designs; the sequence, theorem, proof and tables
+are unchanged. `paper/v1.2-to-v1.3.diff` gives the exact textual change.
+
+The separately scoped supplement checks A25 at gap 2, a16 and b21 at gap 4.
+Its positive results are optimum D, exact count one and target equality.
+For gap 4, all 87,381 sequences through length 8 and 512 seeded samples
+through length 12 are compared to generic exhaustive structural enumeration;
+gap 2 uses 5,461 exhaustive and 768 seeded sequences, also compared to the
+existing core DP. All 1,024 adjacent-state cases are checked exhaustively.
+The CNF-free A25 upper reconstruction excludes all 68*1,267=86,156 set
+pairs: 64,260 by degree three, 21,896 by an edge forbidden in both orders.
+
+The CNF normalization removes 25 repeated literals from 25 clauses, preserving
+all 5,608 clause numbers and the 930 variables. On that normalized CNF,
+the unchanged supplied binary DRAT passes official DRAT-trim (exact line
+`s VERIFIED`); the unchanged binary LRAT passes pinned official cake_lpr
+(exact line `s VERIFIED UNSAT`, exit 0). A text DRAT copy removes 25 repeated
+literals in 25 of 4,990 steps and additionally passes `-W -p -U` without
+warnings. The raw DRAT's duplicate warnings are not hidden. Empty DRAT
+and LRAT controls are rejected; the LRAT control exits 0 and has no success
+line. No solver proof regeneration is needed. Source revisions and input
+hashes are in `variants/PROVENANCE.json` and `variants/A26/normalization.json`.
+
+The earlier R004 independent A25 verification established the positive design
+and the finite upper argument without interpreting this CNF. This package's
+integration uses both sides' records and is not a new blind verification.
+Cake_lpr checks parsed CNF UNSAT, not the RNA mapping; the package's separate
+finite enumeration and prose provide that upper argument. No complete
+variable-level reconstruction of the archived A26 CNF is represented here.
+The fresh manuscript reading, fresh-clone measurements and final record
+appear in `validation/v110/` after preparation. No new D13 replay is part
+of this revision. No maximum is asserted for the gap-4 families.
 
 ## Version 1.2 preparation checks
 

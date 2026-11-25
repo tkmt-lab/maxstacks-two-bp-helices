@@ -1,13 +1,13 @@
 {
   "schema": "maxstacks.claims.v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "model": {
     "pairs": "AU UA CG GC GU UG",
     "min_pair_separation_j_minus_i": 2,
     "min_hairpin_unpaired": 1,
     "isolated_pairs": false,
     "noncrossing": true,
-    "score": "stack 数",
+    "score": "stack \u6570",
     "note": "One unpaired hairpin base, not the usual three."
   },
   "claim": "For T_D = '((.' + '((.)).'*(D-1) + '))', T_12 has a unique maxStacks design and every D >= 13 has no such design. Thus D_2 = 12 in this fixed family.",
@@ -38,9 +38,40 @@
   "not_claimed": [
     "Designability of every D <= 12",
     "A result for arbitrary RNA trees",
-    "Hairpins with three or more unpaired bases",
+    "A maximum or complete classification for the j-i>=4 families; only explicit a-D16 and b-D21 lower designs are added separately.",
     "The Turner energy model or experimental RNA",
     "Priority or human peer review",
     "A proof-assistant verification of the RNA-to-CNF correspondence"
-  ]
+  ],
+  "variants": {
+    "scope": "Supplement only; does not change the article theorem or the root model above.",
+    "A": {
+      "target": "'((' + '((.))'*(D-1) + '))'",
+      "D_min": 3,
+      "min_pair_separation": 2,
+      "maximum_designable_D": 25,
+      "all_D_ge_26": "Undesignable by hereditary necessary conditions, direct complete finite exclusion and prose. Supplied CNF UNSAT certificates are an additional check.",
+      "design": "variants/designs/A-D25.json",
+      "prose": "variants/PROOF-A25.md",
+      "cnf": "variants/A26/input.cnf",
+      "lrat": "variants/A26/proof.lratb",
+      "CNF_variable_mapping_independently_reconstructed": false
+    },
+    "a": {
+      "target": "'((.' + '((...)).'*(D-1) + '))'",
+      "D_min": 3,
+      "min_pair_separation": 4,
+      "designable_D_lower_bound": 16,
+      "maximum_claimed": false,
+      "design": "variants/designs/a-D16.json"
+    },
+    "b": {
+      "target": "'((' + '((...))'*(D-1) + '))'",
+      "D_min": 3,
+      "min_pair_separation": 4,
+      "designable_D_lower_bound": 21,
+      "maximum_claimed": false,
+      "design": "variants/designs/b-D21.json"
+    }
+  }
 }

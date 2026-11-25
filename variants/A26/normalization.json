@@ -1,0 +1,19 @@
+{
+  "variables": 930,
+  "clauses": 5608,
+  "original_cnf_sha256": "1b208590712c3d869ee5b8ef5a57e1e084e87cedda81ae6a8a098ff5017e497c",
+  "normalized_cnf_sha256": "131b683842f71366c793fb1833a23a481943177b2d617f30ac5eecc0a4246ff5",
+  "clauses_with_repeated_literals": 25,
+  "repeated_literals_removed": 25,
+  "operation": "Stable per-clause deduplication only; same clause order and count.",
+  "DRAT_steps": 4990,
+  "DRAT_steps_with_repeated_literals": 25,
+  "DRAT_repeated_literals_removed_in_text_copy": 25,
+  "supplied_binary_DRAT_and_LRAT_unchanged": true,
+  "distributed_sha256": {
+    "input.cnf": "131b683842f71366c793fb1833a23a481943177b2d617f30ac5eecc0a4246ff5",
+    "proof.drat": "c908e00b398369dfc67baab80ad12aed90680e83ba86e5f478bcc60af14eb60d",
+    "proof.lratb": "12bc1191ddad5c2d34ea484ed7068851a7bbe32273e1fd3837850d1eb1e63238",
+    "proof-deduplicated.drat": "7d9ae62d0ac8d06d524cf3e9a9033358fdb91f229c3a29bf31e66d3c89de5cde"
+  }
+}

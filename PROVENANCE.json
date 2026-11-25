@@ -1,6 +1,6 @@
 {
   "schema": "maxstacks.provenance.v1",
-  "article_input_commit": "244e6d2a0",
+  "article_input_commit": "5e150006317ecaabf4d63150cba46bc04ae7d3ac",
   "article_unchanged": false,
   "assembly_date": "2026-10-24",
   "assembly_is_new_blind_verification": false,
@@ -30,14 +30,14 @@
   ],
   "article": [
     {
-      "path": "paper/paper-v1.1.tex",
-      "sha256": "61f851ffeee40c16960f96c7a70acf3173564b8ad79770d6f77c390049e64aa5",
-      "bytes": 35218
+      "path": "paper/paper-v1.3.tex",
+      "sha256": "aac1b5ff32f66b3cb174c43d899e39cb7446cdb1d53bf977a217f677b5c549e8",
+      "bytes": 36857
     },
     {
-      "path": "paper/paper-v1.1.pdf",
-      "sha256": "c36b3aa43ed872fd9f5436195fee33c41238ac45f0ec0720023f2d5dfbf1e82d",
-      "bytes": 106068
+      "path": "paper/paper-v1.3.pdf",
+      "sha256": "75086ae5d10e27f2bbd5a9a8c9b720c4cc4c29669dddecad690bc01edaef8e62",
+      "bytes": 114318
     }
   ],
   "validation_input_commit": "57f66b88b11377d74c418ba411cf04b351d9974e",
@@ -64,8 +64,8 @@
     }
   ],
   "prior_article_input_commit": "bb2e15b71",
-  "article_version": "draft v1.1",
-  "article_change": "Draft label and two Scope sentences only; separate zero-separator D=25 attainability, no maximum-25 claim. Claims, data, proof files and checker code unchanged.",
+  "article_version": "1.3",
+  "article_change": "Version/date, supplement reference in the D25 footnote, one Scope sentence for gap4 lower designs; original sequence/theorem/proofs/tables unchanged.",
   "prior_article": [
     {
       "path": "paper/paper-v1.tex",
@@ -75,5 +75,23 @@
       "path": "paper/paper-v1.pdf",
       "sha256": "eee05a735b131b00b712f76a2108f3ba69834cd24e539ff22a97a773168dd944"
     }
-  ]
+  ],
+  "article_history_prior_to_v110": {
+    "article_input_commit": "244e6d2a0",
+    "article_version": "draft v1.1",
+    "article_change": "Draft label and two Scope sentences only; separate zero-separator D=25 attainability, no maximum-25 claim. Claims, data, proof files and checker code unchanged.",
+    "article": [
+      {
+        "path": "paper/paper-v1.1.tex",
+        "sha256": "61f851ffeee40c16960f96c7a70acf3173564b8ad79770d6f77c390049e64aa5",
+        "bytes": 35218
+      },
+      {
+        "path": "paper/paper-v1.1.pdf",
+        "sha256": "c36b3aa43ed872fd9f5436195fee33c41238ac45f0ec0720023f2d5dfbf1e82d",
+        "bytes": 106068
+      }
+    ]
+  },
+  "variants_provenance": "variants/PROVENANCE.json"
 }

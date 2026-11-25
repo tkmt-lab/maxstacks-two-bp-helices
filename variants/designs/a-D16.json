@@ -1,0 +1,13 @@
+{
+  "family": "a",
+  "D": 16,
+  "length": 125,
+  "sequence": "CGACAAAAUGACAAAAUGAGCAAAGCAGCAAAGCAUGAAACAAUGAAACAACCAAAGGACCAAAGGAAGAAACUAAGAAACUAGGAAACCAGGCCACCACUAAAAGACUAAAAGACGAAACGACG",
+  "target": "((.((...)).((...)).((...)).((...)).((...)).((...)).((...)).((...)).((...)).((...)).((...)).((...)).((...)).((...)).((...)).))",
+  "minimum_pair_separation": 4,
+  "expected_optimum": 16,
+  "expected_count": 1,
+  "input_commit": "aaec8bf565b194a63e3bb1be592e2b14695345e7",
+  "source_path": "studies/R017/next20-h3/certificates/a-D16-486e8557.json",
+  "source_sha256": "086f8747beaa8243458b71b355662c58504312b6d5d2aa4ddc739f174fc5f4e3"
+}
