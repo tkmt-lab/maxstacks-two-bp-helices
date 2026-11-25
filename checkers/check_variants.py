@@ -1,5 +1,5 @@
 """Separate min-gap variants; original T_D mathematics is unchanged.
-Adapted in part from R004's separate A25 verification (see variants/PROVENANCE).
+Adapted in part from a separate A25 verification implementation (see variants/PROVENANCE.json).
 SPDX-License-Identifier: Apache-2.0
 """
 from core import *

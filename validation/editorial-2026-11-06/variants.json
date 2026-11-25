@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "normalization": {
+    "binary_steps": 4990,
+    "proof_duplicates_removed": 25,
+    "CNF_has_no_duplicate_literals": true
+  },
+  "DP_controls": {
+    "2": {
+      "sequences": 6229,
+      "exhaustive_max_length": 6,
+      "seeded_samples_per_extra_length": 128,
+      "seeded_max_length": 12
+    },
+    "4": {
+      "sequences": 87893,
+      "exhaustive_max_length": 8,
+      "seeded_samples_per_extra_length": 128,
+      "seeded_max_length": 12
+    }
+  },
+  "designs": [
+    {
+      "family": "A",
+      "D": 25,
+      "length": 124,
+      "minimum_pair_separation": 2,
+      "optimum": 25,
+      "count": 1,
+      "target_equal": true,
+      "certificate_sha256": "52c3be8d1e5afcd9e12d1bc3dddaed027a27a21f2ca406eb22d9c53f84ffb4f8"
+    },
+    {
+      "family": "a",
+      "D": 16,
+      "length": 125,
+      "minimum_pair_separation": 4,
+      "optimum": 16,
+      "count": 1,
+      "target_equal": true,
+      "certificate_sha256": "ca62e88020664414cd73570d61d7db839db9b7208842bd13b91d58717cbf63bc"
+    },
+    {
+      "family": "b",
+      "D": 21,
+      "length": 144,
+      "minimum_pair_separation": 4,
+      "optimum": 21,
+      "count": 1,
+      "target_equal": true,
+      "certificate_sha256": "211d5bd6dd5249d0555568c76334a96331e8d72dd262f3511fa7937ec56d2ac0"
+    }
+  ],
+  "A25_upper": {
+    "status": "PASS",
+    "states": 32,
+    "offdiagonal_edges": 66,
+    "two_branch_cases_checked_against_brute_force": 1024,
+    "forbidden_two_branch_cases": 152,
+    "independent_sets_size_13": 68,
+    "independent_sets_size_12": 1267,
+    "all_set_pairs_excluded": 86156,
+    "exclusion_counts": {
+      "both_orders_forbidden": 21896,
+      "degree3": 64260
+    },
+    "exclusion_witness_stream_sha256": "e544612571a4051e1744862422a50d76a3515e3392842adcfb4a7f6d97c6bd15",
+    "reads_CNF_or_proof": false,
+    "boundary": "Prose proves normalization, local-move geometry and restriction for all D>=26; not a formal RNA proof."
+  },
+  "elapsed_seconds": 3.712094621999995,
+  "not_claimed": "No maximum for gap4 families a or b. Cake/DRAT replays use separate commands."
+}

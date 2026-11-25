@@ -1,3 +1,6 @@
+> Historical record: 28 October 2026 review. Statements about preparation
+> and acquisition describe that input; see the main README for current use.
+
 > Historical review record (28 October 2026), referring to the then-supplied
 > package. Current acquisition instructions are in the root README.md.
 

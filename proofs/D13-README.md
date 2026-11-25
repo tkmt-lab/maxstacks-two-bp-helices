@@ -8,8 +8,7 @@ check them against the fixed hashes below.
 Download the eight filenames below into `../maxstacks-two-bp-helices-large/`
 beside the repository and check their hashes before use. Original proof
 certificates: copyright 2026 Tatsuhiko Takimoto, CC BY 4.0; see the repository's
-CC-BY-4.0.txt. The 24 October 2026 package assembly used APFS clones locally;
-that historical placement is not required for downloading or replaying them.
+CC-BY-4.0.txt.
 
 | File (DRAT in exact order, then LRAT) | Compressed bytes | SHA256 |
 |---|---:|---|
@@ -61,5 +60,6 @@ nice -n 10 gzip -dc ../maxstacks-two-bp-helices-large/01-input-deletions.drat.gz
 
 The seven decompressed parts must form one stream in the listed order. Require
 normal pipeline termination and drat-trim's `s VERIFIED` success output, plus
-matching whole-stream hash. This optional run takes about 35 minutes in the
-prior record. The 24 October 2026 package assembly checked its hashes without a new DRAT replay.
+matching whole-stream hash. Historical replay times and the scope of earlier runs are recorded in
+`VERIFICATION-RECORD.md` in the repository; allow up to the configured
+10,800-second checker limit for this optional run.

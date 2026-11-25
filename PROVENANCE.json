@@ -6,17 +6,17 @@
   "assembly_is_new_blind_verification": false,
   "adapted_code": [
     {
-      "source": "R004/r017-a-independent/core.py",
+      "source_id": "maxstacks-input:verification-core",
       "source_sha256": "598b2d018baba5c0246d6d51f8b181db92978433048912fb1496b1c2640175b1",
       "package_path": "checkers/core.py"
     },
     {
-      "source": "R004/r017-a-independent/check_finite.py",
+      "source_id": "maxstacks-input:verification-finite",
       "source_sha256": "192c5b136ad39f24b663cb8eea66fdea828daef5363a643f499b877ff5ec6d2d",
       "package_path": "checkers/check_finite.py"
     },
     {
-      "source": "R004/r017-a-independent/check_upper.py",
+      "source_id": "maxstacks-input:verification-upper",
       "source_sha256": "bbf4e88ca74ef0d615af2c7a9129f66c67bf7d31e21ad5279556ed6c86a77a14",
       "package_path": "checkers/check_upper.py"
     }
@@ -30,14 +30,16 @@
   ],
   "article": [
     {
-      "path": "paper/paper-v1.3.tex",
       "sha256": "aac1b5ff32f66b3cb174c43d899e39cb7446cdb1d53bf977a217f677b5c549e8",
-      "bytes": 36857
+      "bytes": 36857,
+      "historical_path": "paper/paper-v1.3.tex",
+      "git_commit": "54b3f751c0290ca38bf71569bcbd81161369c0af"
     },
     {
-      "path": "paper/paper-v1.3.pdf",
       "sha256": "75086ae5d10e27f2bbd5a9a8c9b720c4cc4c29669dddecad690bc01edaef8e62",
-      "bytes": 114318
+      "bytes": 114318,
+      "historical_path": "paper/paper-v1.3.pdf",
+      "git_commit": "54b3f751c0290ca38bf71569bcbd81161369c0af"
     }
   ],
   "validation_input_commit": "57f66b88b11377d74c418ba411cf04b351d9974e",
@@ -68,12 +70,14 @@
   "article_change": "Version/date, supplement reference in the D25 footnote, one Scope sentence for gap4 lower designs; original sequence/theorem/proofs/tables unchanged.",
   "prior_article": [
     {
-      "path": "paper/paper-v1.tex",
-      "sha256": "e56bb9bae672b462478485a6ecb9634b54f8fa90c07569f31e17d5b113c9449a"
+      "sha256": "e56bb9bae672b462478485a6ecb9634b54f8fa90c07569f31e17d5b113c9449a",
+      "historical_path": "paper/paper-v1.tex",
+      "git_commit": "54b3f751c0290ca38bf71569bcbd81161369c0af"
     },
     {
-      "path": "paper/paper-v1.pdf",
-      "sha256": "eee05a735b131b00b712f76a2108f3ba69834cd24e539ff22a97a773168dd944"
+      "sha256": "eee05a735b131b00b712f76a2108f3ba69834cd24e539ff22a97a773168dd944",
+      "historical_path": "paper/paper-v1.pdf",
+      "git_commit": "54b3f751c0290ca38bf71569bcbd81161369c0af"
     }
   ],
   "article_history_prior_to_v110": {
@@ -82,14 +86,16 @@
     "article_change": "Draft label and two Scope sentences only; separate zero-separator D=25 attainability, no maximum-25 claim. Claims, data, proof files and checker code unchanged.",
     "article": [
       {
-        "path": "paper/paper-v1.1.tex",
         "sha256": "61f851ffeee40c16960f96c7a70acf3173564b8ad79770d6f77c390049e64aa5",
-        "bytes": 35218
+        "bytes": 35218,
+        "historical_path": "paper/paper-v1.1.tex",
+        "git_commit": "54b3f751c0290ca38bf71569bcbd81161369c0af"
       },
       {
-        "path": "paper/paper-v1.1.pdf",
         "sha256": "c36b3aa43ed872fd9f5436195fee33c41238ac45f0ec0720023f2d5dfbf1e82d",
-        "bytes": 106068
+        "bytes": 106068,
+        "historical_path": "paper/paper-v1.1.pdf",
+        "git_commit": "54b3f751c0290ca38bf71569bcbd81161369c0af"
       }
     ]
   },
@@ -105,15 +111,91 @@
       },
       {
         "path": "paper/paper-v1.4.pdf",
-        "sha256": "1bf8c4effb9f983f56328ab2bf6d80463a74302dcf91fc885207bb5dc92c6276",
+        "sha256": "4cc0ba2aee65b27d4fd30c90690270cfa1508ceae586c45ff4946c3eebf15321",
         "bytes": 432721
       },
       {
-        "path": "paper/v1.3-to-v1.4.diff",
         "sha256": "5b8f5fe507b2cbb1369d0e6f15bcb8e1d016ab095574638bb2bb441a504b1544",
-        "bytes": 9693
+        "bytes": 9693,
+        "historical_path": "paper/v1.3-to-v1.4.diff",
+        "git_commit": "54b3f751c0290ca38bf71569bcbd81161369c0af"
       }
     ]
   },
-  "historical_record_note": "Earlier input/adaptation entries and article_history_prior_to_v110 record historical assembly sources, including article draft v1.1. The article_v1_4 entries identify the current Version 1.4 TeX, rebuilt PDF and cumulative TeX diff; manifest.json hashes all current distributable files."
+  "historical_record_note": "Earlier article and checker hashes identify historical inputs. Historical manuscript paths are preserved at the specified Git commit, outside this distribution. The article_v1_4 entries identify the current TeX/PDF; its diff is a historical record. Current distributable files are hashed by manifest.json.",
+  "source_id_note": "Source IDs label historical inputs, not package-relative paths or downloadable resources. Original input hashes are preserved. Current distributed files are identified by manifest.json.",
+  "historical_manuscripts": [
+    {
+      "historical_path": "paper/paper-v1.1.pdf",
+      "sha256": "c36b3aa43ed872fd9f5436195fee33c41238ac45f0ec0720023f2d5dfbf1e82d",
+      "bytes": 106068,
+      "git_commit": "54b3f751c0290ca38bf71569bcbd81161369c0af"
+    },
+    {
+      "historical_path": "paper/paper-v1.1.tex",
+      "sha256": "61f851ffeee40c16960f96c7a70acf3173564b8ad79770d6f77c390049e64aa5",
+      "bytes": 35218,
+      "git_commit": "54b3f751c0290ca38bf71569bcbd81161369c0af"
+    },
+    {
+      "historical_path": "paper/paper-v1.2.pdf",
+      "sha256": "2374a6df12f63396d22171be00867cd2802100d86ea0e9c38c1d43f49f26d9f8",
+      "bytes": 113077,
+      "git_commit": "54b3f751c0290ca38bf71569bcbd81161369c0af"
+    },
+    {
+      "historical_path": "paper/paper-v1.2.tex",
+      "sha256": "2361a15e8506e7e30ac74d1d35a235d4d51d8a131d7ab72757ce580c30b2514b",
+      "bytes": 36629,
+      "git_commit": "54b3f751c0290ca38bf71569bcbd81161369c0af"
+    },
+    {
+      "historical_path": "paper/paper-v1.3.pdf",
+      "sha256": "75086ae5d10e27f2bbd5a9a8c9b720c4cc4c29669dddecad690bc01edaef8e62",
+      "bytes": 114318,
+      "git_commit": "54b3f751c0290ca38bf71569bcbd81161369c0af"
+    },
+    {
+      "historical_path": "paper/paper-v1.3.tex",
+      "sha256": "aac1b5ff32f66b3cb174c43d899e39cb7446cdb1d53bf977a217f677b5c549e8",
+      "bytes": 36857,
+      "git_commit": "54b3f751c0290ca38bf71569bcbd81161369c0af"
+    },
+    {
+      "historical_path": "paper/paper-v1.pdf",
+      "sha256": "eee05a735b131b00b712f76a2108f3ba69834cd24e539ff22a97a773168dd944",
+      "bytes": 105763,
+      "git_commit": "54b3f751c0290ca38bf71569bcbd81161369c0af"
+    },
+    {
+      "historical_path": "paper/paper-v1.tex",
+      "sha256": "e56bb9bae672b462478485a6ecb9634b54f8fa90c07569f31e17d5b113c9449a",
+      "bytes": 34939,
+      "git_commit": "54b3f751c0290ca38bf71569bcbd81161369c0af"
+    },
+    {
+      "historical_path": "paper/v1.2-to-v1.3.diff",
+      "sha256": "898049eb361c1ccd043df027482e190fb2eb7c847cc23be545ea6a40882ddf0c",
+      "bytes": 1831,
+      "git_commit": "54b3f751c0290ca38bf71569bcbd81161369c0af"
+    },
+    {
+      "historical_path": "paper/v1.3-to-v1.4.diff",
+      "sha256": "5b8f5fe507b2cbb1369d0e6f15bcb8e1d016ab095574638bb2bb441a504b1544",
+      "bytes": 9693,
+      "git_commit": "54b3f751c0290ca38bf71569bcbd81161369c0af"
+    }
+  ],
+  "current_adapted_code": [
+    {
+      "path": "checkers/core.py",
+      "sha256": "c4e033d547d3e5d6e7867b2c4484f458f018db84d8b0ae74e191943cb7846b66",
+      "bytes": 8099
+    },
+    {
+      "path": "checkers/check_variants.py",
+      "sha256": "7b4d191d33e0506e6afe940eec05d7e773b6c7f71e3fc0536fdbfa96cef28ee1",
+      "bytes": 9847
+    }
+  ]
 }

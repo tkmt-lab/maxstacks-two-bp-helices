@@ -3,7 +3,7 @@
 Read README.md, claims.json, claims/STATEMENT-A.md and VERIFICATION-RECORD.md.
 Package 1.1.0 is dated 2026-11-12. The current article is paper/paper-v1.4.pdf
 with Version 1.4 TeX alongside it. See CHANGELOG.md for the supplement and
-article history. Earlier article versions are retained as historical material;
+article history. Earlier article versions are retained in Git history;
 the fixed-family theorem and certificates are unchanged.
 Run python3 -B checkers/verify.py, then build the pinned official checker and
 run checkers/verify_lrat.py as documented. Python 3.11+, standard library.

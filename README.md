@@ -71,8 +71,8 @@ embedding. These rely on the stated algorithms, finite checks and prose
 arguments; the Python programs and the full RNA theorem are not formally
 verified. The archived A26 CNF has no complete independently checked
 variable-to-RNA reconstruction; its RNA upper bound uses the separate
-CNF-free enumeration and prose proof. Package assembly integrates prior
-research and separate verification and is not a new blind verification.
+CNF-free enumeration and prose proof. The scope of the prior separate
+verification is recorded in [VERIFICATION-RECORD.md](VERIFICATION-RECORD.md).
 
 ## Obtain version 1.1.0
 
@@ -240,9 +240,8 @@ and rerun the relevant checks.
 
 The current PDF and TeX are **Version 1.4**. Article history is recorded in
 [CHANGELOG.md](CHANGELOG.md) and [VERIFICATION-RECORD.md](VERIFICATION-RECORD.md).
-Earlier versions in `paper/` are historical material.
-The exact diffs [v1.2 to v1.3](paper/v1.2-to-v1.3.diff) and
-[v1.3 to the current v1.4](paper/v1.3-to-v1.4.diff) record the edits. To rebuild
+Earlier manuscripts and their diffs are preserved in Git history; the
+distributed `paper/` directory contains the current article only. To rebuild
 with an existing LaTeX installation, use the preamble's packages and run
 the following from the package root:
 

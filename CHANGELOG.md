@@ -2,6 +2,10 @@
 
 ## 1.1.0 — 2026-11-12
 
+- Keep only the current article in the distribution; preserve earlier manuscripts
+  and diffs in Git history. Replace private source paths with public source IDs
+  while retaining the original input hashes.
+
 - Put the result before the README example, consolidate scope, add research
   contact and specific acknowledgments; move article workflow details to the
   verification record and refresh the current Version 1.4 PDF and hashes.

@@ -8,6 +8,6 @@
   "expected_optimum": 25,
   "expected_count": 1,
   "input_commit": "aaec8bf565b194a63e3bb1be592e2b14695345e7",
-  "source_path": "studies/R017/claims-A25/certificates/reroot-A25.json",
+  "source_id": "maxstacks-input:a25-design",
   "source_sha256": "f54064a5952bdd78bdc2671b4e123ef0093f8744e112ead740c9ac12a7e3bad6"
 }

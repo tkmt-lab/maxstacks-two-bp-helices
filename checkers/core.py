@@ -1,4 +1,4 @@
-"""Standard-library model checks, adapted from the R004 implementation.
+"""Standard-library model checks, adapted from a separate verification implementation.
 Packaging is subsequent integration, not a new blind verification.
 SPDX-License-Identifier: Apache-2.0
 """

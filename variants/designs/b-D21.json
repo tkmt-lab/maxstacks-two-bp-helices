@@ -8,6 +8,6 @@
   "expected_optimum": 21,
   "expected_count": 1,
   "input_commit": "aaec8bf565b194a63e3bb1be592e2b14695345e7",
-  "source_path": "studies/R017/next20-h3/certificates/b-D21-bb83efd4.json",
+  "source_id": "maxstacks-input:gap4-b21-design",
   "source_sha256": "bb43daa03da7df6b6c32b63d0c3420fbcb85dffb165d3259c6d27c361cfa327c"
 }

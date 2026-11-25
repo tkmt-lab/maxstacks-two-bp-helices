@@ -2,80 +2,81 @@
   "input_commit": "aaec8bf565b194a63e3bb1be592e2b14695345e7",
   "inputs": [
     {
-      "path": "studies/R017/claims-A25/A26-membership/input.cnf",
+      "source_id": "maxstacks-input:a25-membership-cnf",
       "bytes": 79469,
       "sha256": "1b208590712c3d869ee5b8ef5a57e1e084e87cedda81ae6a8a098ff5017e497c"
     },
     {
-      "path": "studies/R017/claims-A25/A26-membership/proof.drat",
+      "source_id": "maxstacks-input:a25-membership-drat",
       "bytes": 33401,
       "sha256": "c908e00b398369dfc67baab80ad12aed90680e83ba86e5f478bcc60af14eb60d"
     },
     {
-      "path": "studies/R017/claims-A25/A26-membership/proof.lratb",
+      "source_id": "maxstacks-input:a25-membership-lrat",
       "bytes": 51180,
       "sha256": "12bc1191ddad5c2d34ea484ed7068851a7bbe32273e1fd3837850d1eb1e63238"
     },
     {
-      "path": "studies/R017/claims-A25/README.md",
+      "source_id": "maxstacks-input:a25-overview",
       "bytes": 969,
       "sha256": "8b1f814ad90a176275ca3507d4afd0a36c952ebb4b90dc2a521760fea4cf3c7f"
     },
     {
-      "path": "studies/R017/claims-A25/STATEMENT-A25.md",
+      "source_id": "maxstacks-input:a25-statement",
       "bytes": 3257,
       "sha256": "afa53ffe47dbedcbd76f5bad220a5d872e6aaf73dd6143facc9f3fc19ae5a33a"
     },
     {
-      "path": "studies/R017/claims-A25/certificates/reroot-A25.json",
+      "source_id": "maxstacks-input:a25-design",
       "bytes": 2002,
       "sha256": "f54064a5952bdd78bdc2671b4e123ef0093f8744e112ead740c9ac12a7e3bad6"
     },
     {
-      "path": "studies/R017/claims-A25/proofs/GENERAL-LEMMAS.md",
+      "source_id": "maxstacks-input:a25-general-lemmas",
       "bytes": 12704,
       "sha256": "b5b98bd6220f16f0709bc08f516bcbec68d17e96dabe3f918a63d7ac3f3af4a0"
     },
     {
-      "path": "studies/R017/claims-A25/proofs/NEW-LEMMAS.md",
+      "source_id": "maxstacks-input:a25-additional-lemmas",
       "bytes": 11775,
       "sha256": "b3c7f1d1e59db23a0644ffa1093613c4ca32a89e1cf0fc2ecb9322b9328e328b"
     },
     {
-      "path": "studies/R017/claims-A25/proofs/PROOF-A25.md",
+      "source_id": "maxstacks-input:a25-proof",
       "bytes": 6719,
       "sha256": "388564fa3ce5947c6360321bab35b3c4c19fe7d1a118734f40a00024871beac2"
     },
     {
-      "path": "studies/R017/next20-h3/certificates/a-D16-486e8557.json",
+      "source_id": "maxstacks-input:gap4-a16-design",
       "bytes": 494,
       "sha256": "086f8747beaa8243458b71b355662c58504312b6d5d2aa4ddc739f174fc5f4e3"
     },
     {
-      "path": "studies/R017/next20-h3/certificates/b-D21-bb83efd4.json",
+      "source_id": "maxstacks-input:gap4-b21-design",
       "bytes": 540,
       "sha256": "bb43daa03da7df6b6c32b63d0c3420fbcb85dffb165d3259c6d27c361cfa327c"
     },
     {
-      "path": "studies/R017/next21-h3b/SUMMARY-H3.md",
+      "source_id": "maxstacks-input:gap4-summary",
       "bytes": 5736,
       "sha256": "945166937c315731d09d6162cc985e2a1ed56039f415ea1492afc9355eb37c90"
     },
     {
-      "path": "studies/R004/report-r017-a25-2026-10-24.md",
+      "source_id": "maxstacks-input:a25-verification-report",
       "bytes": 18149,
       "sha256": "b8ce9330f14a9b27ef8be92b1b48a47be175c60ed84dbe1615cf97e503a85e3f"
     },
     {
-      "path": "studies/R004/r017-a25-independent/finite_check.py",
+      "source_id": "maxstacks-input:a25-verification-finite",
       "bytes": 7139,
       "sha256": "128a562b017e9b609d85c5e12beddd6b5263de3380daca3dff5ae0c08e591307"
     },
     {
-      "path": "studies/R004/r017-a25-independent/check_supplied_proof.py",
+      "source_id": "maxstacks-input:a25-verification-supplied-proof",
       "bytes": 4652,
       "sha256": "f1cfc750db53511c7a17481fd8e40d2694bef2a411e3730d209d9f3394c22503"
     }
   ],
-  "integration_is_not_a_new_blind_verification": true
+  "integration_is_not_a_new_blind_verification": true,
+  "source_id_note": "Source IDs label historical inputs, not package-relative paths or downloadable resources. Original source hashes are preserved. Current design files are identified by manifest.json and validation/editorial-2026-11-06/variants.json; validation/v110 records earlier inputs."
 }

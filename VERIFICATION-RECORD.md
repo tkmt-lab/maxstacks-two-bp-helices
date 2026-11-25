@@ -22,7 +22,8 @@ current assurance in article Section 7 and moves the detailed verification
 workflow here. The separate variant is described as a completed supplement.
 The theorem, definitions, proof arguments, tables, sequences, mathematical
 code, input data and certificates are unchanged. The current TeX/PDF and
-v1.3-to-v1.4 diff are identified in PROVENANCE.json and manifest.json.
+historical v1.3-to-v1.4 diff are identified in PROVENANCE.json. The current
+distribution is hashed by manifest.json.
 
 The separate model-verification implementation used the statement, model
 and CNF specifications, auxiliary embedding description, rival lists and
@@ -46,6 +47,22 @@ propagation traces and replay check the finite step as well.
 As of 5 November 2026, hosted CI had not run for package 1.1.0.
 The earlier package checks are local results, not hosted CI results.
 
+## Distribution cleanup (6 November 2026)
+
+The distribution contains only the current Version 1.4 article. Earlier
+manuscripts and their diffs remain byte-for-byte in Git history at package
+commit `54b3f751c0290ca38bf71569bcbd81161369c0af`; PROVENANCE.json
+records their historical paths and hashes. This preserves the original
+manuscripts, including their draft labels, outside the current file inventory.
+The historical reader reports in `validation/v110/` describe the
+28 October review, not the current acquisition instructions.
+
+Public source IDs replace private source paths in provenance records and
+design metadata. Original input hashes are preserved; checker changes only
+replace the introductory source attribution. The mathematical algorithms,
+sequences, structures, formulas and proof certificates are unchanged.
+The current PDF was rebuilt from the unchanged Version 1.4 TeX.
+
 ## Article 1.4 (5 November 2026; before the editorial revision)
 
 A blind reading of the Version 1.3 article alone found no counterexample to
@@ -54,7 +71,7 @@ result and the 32-vertex graph counts; it asked for a retrievable permanent
 package reference, a publication identifier for the separate maximum-25
 result, and a short mathematical reason for the U14 clause symmetries.
 Version 1.4 adds these three items (Appendix A, the D=25 footnote and
-Section 5.2). The current `paper/v1.3-to-v1.4.diff` also includes
+Section 5.2). The historical `paper/v1.3-to-v1.4.diff` also includes
 the editorial revision described above. Theorem, proofs, tables, data, certificates and checkers are
 unchanged, so the package checks below still apply.
 
@@ -63,7 +80,7 @@ unchanged, so the package checks below still apply.
 The article edit is limited to version/date metadata, the D25 footnote's
 reference to the variants supplement, and one Scope sentence pointing to
 the three-base-hairpin lower designs; the sequence, theorem, proof and tables
-are unchanged. `paper/v1.2-to-v1.3.diff` gives the exact textual change.
+are unchanged. The historical `paper/v1.2-to-v1.3.diff` gives the exact textual change.
 
 The separately scoped supplement checks A25 at gap 2, a16 and b21 at gap 4.
 Its positive results are optimum D, exact count one and target equality.
