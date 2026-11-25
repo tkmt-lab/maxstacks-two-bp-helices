@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "checker_sha256": "2fee767af4478ed817f8bdf6feea5866e5e59f1f67c2a4477e98ee961612881d",
+  "drat_checker_sha256": "b3c5aecc22d3f47f009dfbaea0f7c4429bcadaba6d918be2292f76025b4e9b2b",
+  "CNF_sha256": "131b683842f71366c793fb1833a23a481943177b2d617f30ac5eecc0a4246ff5",
+  "proof_sha256": "12bc1191ddad5c2d34ea484ed7068851a7bbe32273e1fd3837850d1eb1e63238",
+  "results": [
+    {
+      "label": "A26-cake",
+      "returncode": 0,
+      "exact_success_marker": true,
+      "expected_marker": "s VERIFIED UNSAT",
+      "expected_accept": true,
+      "seconds": 0.34574554199934937,
+      "command": [
+        "<fresh-clone>/work/cake_lpr/cake_lpr",
+        "--CML_HEAP_SIZE=256",
+        "--CML_STACK_SIZE=64",
+        "<fresh-clone>/variants/A26/input.cnf",
+        "<fresh-clone>/variants/A26/proof.lratb"
+      ]
+    },
+    {
+      "label": "A26-cake-empty-control",
+      "returncode": 0,
+      "exact_success_marker": false,
+      "expected_marker": "s VERIFIED UNSAT",
+      "expected_accept": false,
+      "seconds": 0.006800000002840534,
+      "command": [
+        "<fresh-clone>/work/cake_lpr/cake_lpr",
+        "--CML_HEAP_SIZE=64",
+        "--CML_STACK_SIZE=64",
+        "<fresh-clone>/variants/A26/input.cnf",
+        "<fresh-clone>/work/variants-proofs/empty.lrat"
+      ]
+    },
+    {
+      "label": "A26-supplied-DRAT",
+      "returncode": 0,
+      "exact_success_marker": true,
+      "expected_marker": "s VERIFIED",
+      "expected_accept": true,
+      "seconds": 0.28867908398387954,
+      "command": [
+        "<fresh-clone>/work/drat-trim/drat-trim",
+        "<fresh-clone>/variants/A26/input.cnf",
+        "<fresh-clone>/variants/A26/proof.drat",
+        "-t",
+        "60"
+      ]
+    },
+    {
+      "label": "A26-normalized-RUP",
+      "returncode": 0,
+      "exact_success_marker": true,
+      "expected_marker": "s VERIFIED",
+      "expected_accept": true,
+      "seconds": 0.029913125006714836,
+      "command": [
+        "<fresh-clone>/work/drat-trim/drat-trim",
+        "<fresh-clone>/variants/A26/input.cnf",
+        "<fresh-clone>/variants/A26/proof-deduplicated.drat",
+        "-W",
+        "-p",
+        "-U",
+        "-t",
+        "60"
+      ]
+    },
+    {
+      "label": "A26-DRAT-empty-control",
+      "returncode": 1,
+      "exact_success_marker": false,
+      "expected_marker": "s VERIFIED",
+      "expected_accept": false,
+      "seconds": 0.02807929099071771,
+      "command": [
+        "<fresh-clone>/work/drat-trim/drat-trim",
+        "<fresh-clone>/variants/A26/input.cnf",
+        "<fresh-clone>/work/variants-proofs/empty.drat",
+        "-t",
+        "60"
+      ]
+    }
+  ],
+  "scope": "Parsed CNF UNSAT. RNA correspondence uses prose and separate finite reconstruction, not cake_lpr."
+}

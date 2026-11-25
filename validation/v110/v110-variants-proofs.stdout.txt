@@ -1,0 +1,1 @@
+PASS: A26 certificates and rejection controls; no D13 replay.

@@ -12,5 +12,7 @@
   "read_only": true,
   "restricted_six_files": true,
   "independent_scientific_verification": false,
-  "verdict_sha256": "f398f96fa9dd9dd45a9b3f3432ad6a62fc5305980c572118afd47b1cc61413e8"
+  "original_verdict_sha256": "f398f96fa9dd9dd45a9b3f3432ad6a62fc5305980c572118afd47b1cc61413e8",
+  "public_verdict_sha256": "b6f886983201aa74af56d7dd5e30d293a87a1de01d5695112317812ee38879b1",
+  "public_edit": "Only absolute review-input links were made package-relative; verdict text unchanged."
 }

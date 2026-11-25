@@ -1,0 +1,14 @@
+{
+  "revision": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+  "source_sha256": "d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee",
+  "command": [
+    "cc",
+    "-std=c99",
+    "-O2",
+    "<fresh-clone>/work/drat-trim/drat-trim.c",
+    "-o",
+    "<fresh-clone>/work/drat-trim/drat-trim"
+  ],
+  "binary_sha256": "b3c5aecc22d3f47f009dfbaea0f7c4429bcadaba6d918be2292f76025b4e9b2b",
+  "assertions_enabled": true
+}

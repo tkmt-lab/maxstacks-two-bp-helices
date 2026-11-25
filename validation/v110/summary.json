@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "tested_package_commit": "20db8d3de2a85b7ecd948ec2c671de7a309f4f10",
+  "clean_clone_before_checks": true,
+  "light": {
+    "status": "PASS",
+    "files_checked": 106,
+    "elapsed_seconds": 14.783932624995941,
+    "scope": "Hashes, exhaustive small DP controls, D12, rivals, exact F/U14 reconstruction, all case hashes, family generation, word coverage, symmetries, finite mapping supplements, UCP traces; variant DP controls, three designs and all 86,156 A25 state-set exclusions.",
+    "excludes": "LRAT replay and general-D geometric proof; run verify_lrat.py and read the article."
+  },
+  "CFF": "Official CFF1.2.0 schema PASS using jsonschema",
+  "no_D13_replay": true,
+  "hosted_CI_run": false,
+  "resources": {
+    "light": {
+      "maxrss_bytes": 305397760,
+      "time_summary": "14.82 real        14.68 user         0.10 sys"
+    },
+    "cake-build": {
+      "maxrss_bytes": 44646400,
+      "time_summary": "1.77 real         0.25 user         0.35 sys"
+    },
+    "drat-build": {
+      "maxrss_bytes": 71024640,
+      "time_summary": "0.54 real         0.26 user         0.05 sys"
+    },
+    "variants-proofs": {
+      "maxrss_bytes": 50741248,
+      "time_summary": "0.74 real         0.10 user         0.03 sys"
+    }
+  },
+  "U14": {
+    "cases": 34,
+    "status": "PASS",
+    "total_replay_seconds": 2.1744998740323354,
+    "negative_control_exit": 0,
+    "negative_control_success_line": false
+  }
+}

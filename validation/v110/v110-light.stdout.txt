@@ -1,0 +1,15 @@
+File and expanded gzip hashes PASS 106
+DP/model checked 22485 D12 (12, 1)
+D13 {"rivals": 227280, "scores": {"13": 227255, "14": 25}, "variables": 3158, "base_clauses": 41128, "clauses": 268408, "canonical_byte_hash_matches": true, "byte_equal": true, "rebuilt_sha256": "4f8100bbe4362bf45db9b4be068eb115bf1c48c3f556ce5c3bceff1e7f5a4a6c", "input_sha256": "4f8100bbe4362bf45db9b4be068eb115bf1c48c3f556ce5c3bceff1e7f5a4a6c", "corrupt_rival_rejected": "unmatched closing parenthesis", "elapsed_seconds": 4.4563820410112385}
+U14 {"rivals": 1731, "scores": {"14": 1718, "15": 13}, "variables": 5044, "base_clauses": 67129, "clauses": 68860, "canonical_byte_hash_matches": true, "byte_equal": true, "rebuilt_sha256": "5ff81ea47c5fa1f66300587ea0d036cae32598c2070374e8ee423056f89f715f", "input_sha256": "5ff81ea47c5fa1f66300587ea0d036cae32598c2070374e8ee423056f89f715f", "corrupt_rival_rejected": "unmatched closing parenthesis", "elapsed_seconds": 2.718100708007114}
+All finite structural and CNF checks passed
+Families exactly match all 1731 rivals {'local': 78, 'outer_swap': 13, 'left_triplet': 39, 'right_triplet': 39, 'inner_swap': 78, 'inner_triplet': 1482, 'root_shift': 2}
+Word coverage {'incompatible_pairs': 66, 'all_slot_orientation_checks': 77376, 'candidate_count': 4587520, 'enumeration': {'nodes': 20233, 'rejected_candidates': 4587452, 'accepted': 68}, 'manifest_covers_each_orbit_once': True}
+All 13 symmetry generators preserve full clause multisets
+Finite mapping supplement {'total_rival_embeddings': 50199, 'selections': 29}
+All 34 cases UCP UNSAT, traces replayed
+Variant A 25 PASS
+Variant a 16 PASS
+Variant b 21 PASS
+All variant checks PASS
+PASS: all light checks; LRAT replay is a separate command.

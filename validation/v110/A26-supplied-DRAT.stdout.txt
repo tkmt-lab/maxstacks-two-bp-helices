@@ -1,0 +1,68 @@
+
+c turning on binary mode checking
+
+c parsing input formula with 930 variables and 5608 clauses
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 5620
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 5626
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 5632
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 5638
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 5644
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 5650
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 5656
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 5662
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 5668
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 5674
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 5680
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 5686
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 5692
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 6348
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 6354
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 6360
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 6366
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 6372
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 6378
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 6384
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 6390
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 6396
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 6402
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 6408
+
+c WARNING: detected and deleted duplicate literal 66 at position 2 of proof line 6414
+
+c finished parsing, read 33401 bytes from proof file
+
+c detected empty clause; start verification via backward checking
+
+c 1032 of 5608 clauses in core                            
+
+c 321 of 1438 lemmas in core using 17726 resolution steps
+
+c 0 RAT lemmas in core; 29 redundant literals in core lemmas
+
+s VERIFIED
+
+c verification time: 0.024 seconds

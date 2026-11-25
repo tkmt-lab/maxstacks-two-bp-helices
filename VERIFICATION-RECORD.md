@@ -47,8 +47,22 @@ integration uses both sides' records and is not a new blind verification.
 Cake_lpr checks parsed CNF UNSAT, not the RNA mapping; the package's separate
 finite enumeration and prose provide that upper argument. No complete
 variable-level reconstruction of the archived A26 CNF is represented here.
-The fresh manuscript reading, fresh-clone measurements and final record
-appear in `validation/v110/` after preparation. No new D13 replay is part
+The fresh manuscript reading and fresh-clone measurements are in
+`validation/v110/`. The fresh clone of `20db8d3de2a85b7ecd948ec2c671de7a309f4f10`
+passed all light checks (106 files, 14.784 s; peak RSS 305,397,760 bytes).
+It rebuilt pinned cake_lpr in 1.77 s and pinned DRAT-trim in 0.54 s, then
+passed the three positive proof replays and two rejection controls in 0.74 s
+(peak RSS 50,741,248 bytes). All 34 original U14 LRATs and their valid/invalid
+hint controls also passed. The package CFF passed the official 1.2.0 schema.
+Later changes add these records and clarify documentation; the tested
+mathematical code, inputs and proofs are unchanged.
+
+The one fresh manuscript reader returned ACCEPT for scope and models,
+MINOR for reproduction, MAJOR 0. Two minor documentation comments were
+applied: checker-specific DRAT flags and the actual acquisition routes.
+The PDF/TeX were unchanged after that reading. A version-specific v1.1.0
+download link remains a release-maintainer action before public distribution;
+this preparation supplies a local repository and a fresh-clone command. No new D13 replay is part
 of this revision. No maximum is asserted for the gap-4 families.
 
 ## Version 1.2 preparation checks
