@@ -8,7 +8,7 @@ T_D = '((.' + '((.)).' * (D-1) + '))',   D >= 2,
 
 the largest designable D is **12**. A 71-base sequence uniquely designs T₁₂;
 T_D has no design for every D≥13. This package contains the
-[article, Version 1.3](paper/paper-v1.3.pdf), its [TeX source](paper/paper-v1.3.tex),
+[article, Version 1.4](paper/paper-v1.4.pdf), its [TeX source](paper/paper-v1.4.tex),
 the [claim specification](claims/STATEMENT-A.md), data and reproducible checks.
 
 The question and maxStacks framework come from **Théo Boury, Laurent Bulteau
@@ -200,17 +200,22 @@ Git records the manifest itself. Never refresh hashes to conceal an unexplained
 mismatch. After a reviewed intentional edit, use `python3 -B tools/update_manifest.py`
 and rerun the relevant checks.
 
-The included current PDF and TeX are **Version 1.3**. Relative to v1.2, only
-version/date metadata, the D=25 footnote's package reference and one Scope
-sentence about the gap-4 lower designs change. The 124-base sequence, main
-theorem, proofs and tables are unchanged; the maximum 25 is a supplement
-result, not a theorem of the article. Earlier drafts are retained in `paper/`,
-and [the exact diff](paper/v1.2-to-v1.3.diff) records the edit. To rebuild
+The included current PDF and TeX are **Version 1.4**. Relative to v1.2,
+Version 1.3 changed only version/date metadata, the D=25 footnote's package
+reference and one Scope sentence about the gap-4 lower designs. Version 1.4
+adds the package's permanent location (repository, tag and Zenodo DOIs) to
+Appendix A, a short derivation of the block and letter symmetries of U14 in
+Section 5.2, and states in the D=25 footnote that the maximum 25 is not proved
+in the article and is not relied on. The 124-base sequence, main theorem,
+proofs and tables are unchanged; the maximum 25 is a supplement result, not a
+theorem of the article. Earlier drafts are retained in `paper/`, and the exact
+diffs [v1.2 to v1.3](paper/v1.2-to-v1.3.diff) and
+[v1.3 to v1.4](paper/v1.3-to-v1.4.diff) record the edits. To rebuild
 with an existing LaTeX installation, use the preamble's packages and run
 `pdflatex` twice, sending output to `work/paper/`. PDF bytes may differ
 across engines. Certificate checks do not need a TeX installation.
 
-Tatsuhiko Takimoto. Package version **1.1.0**; article **Version 1.3**.
+Tatsuhiko Takimoto. Package version **1.1.0**; article **Version 1.4**.
 See [CITATION.cff](CITATION.cff). Code is Apache-2.0; original prose, data and
 proof certificates are CC BY 4.0. Full license texts and third-party boundaries
 are in [LICENSE](LICENSE). Version 1.0.0 remains archived unchanged. Version 1.1.0 is prepared locally

@@ -93,5 +93,26 @@
       }
     ]
   },
-  "variants_provenance": "variants/PROVENANCE.json"
+  "variants_provenance": "variants/PROVENANCE.json",
+  "article_v1_4": {
+    "article_version": "1.4",
+    "article_change": "Appendix A permanent package location (repository, tag v1.1.0, Zenodo all-versions and v1.0.0 DOIs); Section 5.2 short derivation of the clause symmetries; D25 footnote states the maximum 25 is not proved or relied on here. Theorem/proofs/tables unchanged.",
+    "article": [
+      {
+        "path": "paper/paper-v1.4.tex",
+        "sha256": "8cabadae484eca277e059cb015cf32d866f373996a4e5c7d8af3e094e5a6307c",
+        "bytes": 38748
+      },
+      {
+        "path": "paper/paper-v1.4.pdf",
+        "sha256": "00cfab3dacafd610f64765346cd708416637cedac9d2f4097f5b9afaf25aa9a9",
+        "bytes": 117889
+      },
+      {
+        "path": "paper/v1.3-to-v1.4.diff",
+        "sha256": "b1379d16bd26c31e50c06d4709b5bd314af0824cf4cbdeec9ba1b6fe65a9c941",
+        "bytes": 4280
+      }
+    ]
+  }
 }

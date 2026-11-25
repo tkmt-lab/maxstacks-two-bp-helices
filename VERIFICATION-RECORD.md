@@ -2,7 +2,7 @@
 
 Author: Tatsuhiko Takimoto. Package assembly: literature-role Codex, 24 October
 2026 JST. Original article input revision: `bb2e15b71` (draft v1). The current
-article is Version 1.3. The following Version 1.2 notes are historical;
+article is Version 1.4. The following Version 1.2 notes are historical;
 Version 1.2 was edited from research revision `1dc1d3883` (draft v1.1).
 Version 1.2 changes the version label, clarifies definitions and actual package references, and adds the separate D=25 witness footnote; the theorem, proof, tables and certificate hashes are unchanged.
 No maximum-25, exclusion-above-25 or priority claim was included in Version 1.2.
@@ -13,6 +13,18 @@ The v1.1 Scope addition received one fresh AI reading with only its PDF, TeX
 and v1-to-v1.1 diff: ACCEPT for overclaiming and ACCEPT for distinguishing
 the variant from the fixed-family bound 12. This reading did not independently
 verify the D=25 design; that observation was outside the v1.0.0 package's certificates.
+
+## Article 1.4 (5 November 2026)
+
+A blind reading of the Version 1.3 article alone found no counterexample to
+the mathematical reductions and independently reproduced the 71-base design
+result and the 32-vertex graph counts; it asked for a retrievable permanent
+package reference, a publication identifier for the separate maximum-25
+result, and a short mathematical reason for the U14 clause symmetries.
+Version 1.4 adds these three items (Appendix A, the D=25 footnote and
+Section 5.2) and nothing else; `paper/v1.3-to-v1.4.diff` gives the exact
+change. Theorem, proofs, tables, data, certificates and checkers are
+unchanged, so the package checks below still apply.
 
 ## Package 1.1.0 / article 1.3 (28 October 2026)
 
