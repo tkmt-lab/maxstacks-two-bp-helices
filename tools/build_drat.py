@@ -12,7 +12,9 @@ def main():
     raw=urllib.request.urlopen('https://raw.githubusercontent.com/marijnheule/drat-trim/'+REV+'/drat-trim.c',timeout=60).read()
     assert hashlib.sha256(raw).hexdigest()==SOURCE_SHA256
     source=out/'drat-trim.c';source.write_bytes(raw);binary=out/'drat-trim'
-    cmd=['cc','-std=c99','-O2',str(source),'-o',str(binary)]
+    # glibc hides getc_unlocked under strict C99 without its feature macro.
+    # Keep the pinned upstream source and assertions unchanged.
+    cmd=['cc','-std=c99','-D_DEFAULT_SOURCE','-O2',str(source),'-o',str(binary)]
     subprocess.run(cmd,check=True)
     (out/'build.json').write_text(json.dumps({'revision':REV,'source_sha256':SOURCE_SHA256,'command':cmd,'binary_sha256':hashlib.sha256(binary.read_bytes()).hexdigest(),'assertions_enabled':True},indent=2)+'\n')
     print(binary)

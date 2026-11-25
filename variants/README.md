@@ -1,5 +1,14 @@
 # Supplement: zero separators and three-base hairpins
 
+**Package 1.1.0 — 2026-11-12.** From the package root, with Python 3.11+:
+
+```sh
+python3 -B checkers/verify.py
+```
+
+Expected: exit 0 and `work/checks/verification.json` with `"status": "PASS"`.
+Obtain the versioned package using the [main README Quick start](../README.md#quick-start).
+
 These results are separate from the article's fixed separator-1/hairpin-1
 maximum 12. Package **1.1.0** adds three certificates:
 
@@ -68,7 +77,9 @@ nice -n 10 python3 -B checkers/verify_variants_proofs.py \
 The builder downloads the unmodified official `drat-trim.c` at commit
 `2e3b2dc0ecf938addbd779d42877b6ed69d9a985`, verifies SHA256
 `d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee`,
-and compiles with assertions enabled. Skip this build if its work directory
+and compiles with `cc -std=c99 -D_DEFAULT_SOURCE -O2`, with assertions enabled.
+`_DEFAULT_SOURCE` exposes `getc_unlocked` on Linux/glibc under strict C99;
+the pinned upstream source is not modified. Skip this build if its work directory
 already exists. DRAT-trim's exact success line is `s VERIFIED`, **not**
 cake_lpr's marker. The unchanged binary DRAT is checked with `-t 60`, without warning-strict
 options; it must be accepted, and its 25 duplicate-literal warnings are recorded.
@@ -96,9 +107,7 @@ reproduction, not a new blind derivation or human peer review.
 `PROVENANCE.json` records pinned input hashes. Scientific results are kept
 separate from the manuscript reading and literature search.
 
-This v1.1.0 supplement is supplied as a local repository preparation. There is
-no public v1.1.0 download yet; the v1.0.0 archive does not contain these files.
-From a supplied repository, make a fresh local clone using the main README's
-command before running the checks. A release maintainer must add a versioned
-v1.1.0 acquisition link before public distribution. The A26 files are included
-in this supplement; they require none of the separate large D13 attachments.
+This supplement is included in package `v1.1.0` (2026-11-12); use the main
+README's versioned acquisition command. The v1.0.0 archive does not contain
+these files. The A26 files are included in this supplement and require none
+of the separate large D13 attachments.

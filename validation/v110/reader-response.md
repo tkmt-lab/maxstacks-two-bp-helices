@@ -1,3 +1,6 @@
+> Historical review record (28 October 2026), referring to the then-supplied
+> package. Current acquisition instructions are in the root README.md.
+
 # Fresh-reader disposition
 
 Overall MINOR: overclaims ACCEPT; both pair-gap models including competitors

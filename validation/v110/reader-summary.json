@@ -13,6 +13,6 @@
   "restricted_six_files": true,
   "independent_scientific_verification": false,
   "original_verdict_sha256": "f398f96fa9dd9dd45a9b3f3432ad6a62fc5305980c572118afd47b1cc61413e8",
-  "public_verdict_sha256": "b6f886983201aa74af56d7dd5e30d293a87a1de01d5695112317812ee38879b1",
-  "public_edit": "Only absolute review-input links were made package-relative; verdict text unchanged."
+  "public_verdict_sha256": "99714a55bd05cd6e91bf7d484c5a1028067774b8690cdfa18560345805be0de0",
+  "public_edit": "Only absolute review-input links were made package-relative; verdict text unchanged. A dated historical-record header was added for package 1.1.0 release documentation; the original verdict hash remains historical."
 }

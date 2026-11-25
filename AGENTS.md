@@ -1,10 +1,10 @@
 # Entry point for a computational reader
 
 Read README.md, claims.json, claims/STATEMENT-A.md and VERIFICATION-RECORD.md.
-The article is paper/paper-v1.2.pdf with Version 1.2 TeX alongside it.
-Version 1.2 clarifies definitions, file references and the separate D=25 example;
-it does not change the fixed-family theorem or certificates. Drafts v1 and v1.1
-are retained.
+Package 1.1.0 is dated 2026-11-12. The current article is paper/paper-v1.4.pdf
+with Version 1.4 TeX alongside it. See CHANGELOG.md for the supplement and
+article history. Earlier article versions are retained as historical material;
+the fixed-family theorem and certificates are unchanged.
 Run python3 -B checkers/verify.py, then build the pinned official checker and
 run checkers/verify_lrat.py as documented. Python 3.11+, standard library.
 Optimized Python is refused. Generated files belong in ignored work/.

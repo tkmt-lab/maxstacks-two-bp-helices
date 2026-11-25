@@ -1,5 +1,22 @@
 # Twelve two-base-pair helices in the maxStacks model
 
+**Package 1.1.0 — 2026-11-12. Article Version 1.4.**
+
+## Quick start
+
+With Git and Python 3.11+ on Linux or macOS:
+
+```sh
+git clone --branch v1.1.0 --single-branch https://github.com/tkmt-lab/maxstacks-two-bp-helices.git maxstacks-check
+cd maxstacks-check
+python3 -B checkers/verify.py
+```
+
+Expected: exit 0 and `work/checks/verification.json` containing
+`"status": "PASS"` (D12 optimum 12, exact count 1, target equality).
+All light-check inputs are included; no SAT solver or large download is needed.
+Run the remaining commands below from this clone; reuse completed checker builds.
+
 For the fixed target family
 
 ```text
@@ -41,22 +58,14 @@ D counts the enclosing helix. These supplement results do not change the
 article theorem. No Turner-model, experimental, priority or human peer-review
 claim is made.
 
-## Obtain the preparation
+## Obtain version 1.1.0
 
-Version 1.1.0 is currently a local repository preparation supplied for review;
-there is no public download for it yet. The v1.0.0 archive does not contain
-the new supplement. Given the supplied local Git repository, check a clean
-copy with:
-
-```sh
-git clone --no-hardlinks /path/to/supplied/maxstacks-two-bp-helices maxstacks-check
-cd maxstacks-check
-```
-
-Use the exact supplied commit when comparing results. A release maintainer
-must add the versioned v1.1.0 repository/archive link before distribution.
-The following commands run in that clone. Only the optional D13 replay needs
-the separately archived large files; all added A26 files are already included.
+The versioned source is the `v1.1.0` tag at
+[tkmt-lab/maxstacks-two-bp-helices](https://github.com/tkmt-lab/maxstacks-two-bp-helices/tree/v1.1.0).
+The Quick start above obtains that version. Keep the exact tag/commit when
+comparing results. The v1.0.0 archive does not contain the added supplement.
+Only the optional D13 replay needs separately archived large files; all added
+A26 files are included.
 
 ## Run the light checks
 
@@ -138,7 +147,8 @@ Download the seven named DRAT gzip parts and `D13.lratb.gz` to the companion
 directory, preserving their names; their checksums are in `data/large-proofs.json`.
 They are not needed for the light checks or the added A26 proof.
 The v1.0.0 package was archived as [DOI 10.5281/zenodo.23679268](https://doi.org/10.5281/zenodo.23679268).
-This local v1.1.0 preparation has no new release identifier.
+The source release identifier for this package is `v1.1.0` at the repository above.
+The linked v1.0.0 DOI identifies the unchanged large proofs, not this supplement.
 
 With the companion directory beside this repository, run:
 
@@ -165,10 +175,11 @@ nice -n 10 gzip -dc ../maxstacks-two-bp-helices-large/D13.lratb.gz |
 For the shell form, inspect both normal pipeline termination and the exact
 `s VERIFIED UNSAT` line; use the Python runner for hash and complete-delivery checks.
 The companion README also gives the seven-part binary DRAT replay order.
-A DRAT replay is optional; this package preparation verifies its hashes and
-uses the archived LRAT for the required full-F replay. It does not claim a new
-DRAT replay. CI specifies the light checks, all U14 LRATs, and the added A26 LRAT/DRAT
-checks; D13 remains a separate local check. Hosted CI has not run for v1.1.0.
+A DRAT replay is optional; the verification record documents the earlier
+hash checks and archived LRAT full-F replay. Those historical measurements
+do not represent a new DRAT replay for this release. CI specifies the light checks, all U14 LRATs, and the added A26 LRAT/DRAT
+checks; D13 remains a separate local check. As of 5 November 2026, hosted CI had not run for v1.1.0;
+local execution does not establish a hosted CI result.
 
 ## Assurance and provenance
 
@@ -212,11 +223,19 @@ theorem of the article. Earlier drafts are retained in `paper/`, and the exact
 diffs [v1.2 to v1.3](paper/v1.2-to-v1.3.diff) and
 [v1.3 to v1.4](paper/v1.3-to-v1.4.diff) record the edits. To rebuild
 with an existing LaTeX installation, use the preamble's packages and run
-`pdflatex` twice, sending output to `work/paper/`. PDF bytes may differ
+the following from the package root:
+
+```sh
+mkdir -p work/paper
+pdflatex -interaction=nonstopmode -halt-on-error -output-directory=work/paper paper/paper-v1.4.tex
+pdflatex -interaction=nonstopmode -halt-on-error -output-directory=work/paper paper/paper-v1.4.tex
+```
+
+PDF bytes may differ
 across engines. Certificate checks do not need a TeX installation.
 
 Tatsuhiko Takimoto. Package version **1.1.0**; article **Version 1.4**.
 See [CITATION.cff](CITATION.cff). Code is Apache-2.0; original prose, data and
 proof certificates are CC BY 4.0. Full license texts and third-party boundaries
-are in [LICENSE](LICENSE). Version 1.0.0 remains archived unchanged. Version 1.1.0 is prepared locally
-and has not been pushed or published.
+are in [LICENSE](LICENSE). Version 1.0.0 remains archived unchanged.
+See [CHANGELOG.md](CHANGELOG.md) for package 1.1.0 (2026-11-12).

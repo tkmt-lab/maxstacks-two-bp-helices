@@ -1,11 +1,12 @@
 # Separate D13 certificates
 
-Companion to maxstacks-two-bp-helices version 1.0.0. These eight files are outside
-Git. They were placed by APFS clone; do not edit them in place. Original proof
-certificates: copyright 2026 Tatsuhiko Takimoto, CC BY 4.0. The full license is
-in the companion repository's CC-BY-4.0.txt. This is local preparation, not a
-published deposit. Attachment splitting, identifiers and release require the
-author's decision.
+The eight unchanged D13 attachments for package versions 1.0.0 and 1.1.0
+are outside Git, at [the v1.0.0 archive](https://doi.org/10.5281/zenodo.23679268).
+Download the eight filenames below into `../maxstacks-two-bp-helices-large/`
+beside the repository and check their hashes before use. Original proof
+certificates: copyright 2026 Tatsuhiko Takimoto, CC BY 4.0; see the repository's
+CC-BY-4.0.txt. The 24 October 2026 package assembly used APFS clones locally;
+that historical placement is not required for downloading or replaying them.
 
 | File (DRAT in exact order, then LRAT) | Compressed bytes | SHA256 |
 |---|---:|---|
@@ -46,15 +47,16 @@ nice -n 10 gzip -dc ../maxstacks-two-bp-helices-large/D13.lratb.gz |
 ```
 
 Optional binary DRAT replay, with assertions-enabled drat-trim revision
-`2e3b2dc0ecf938addbd779d42877b6ed69d9a985` already built as `drat-trim-assertions`:
+`2e3b2dc0ecf938addbd779d42877b6ed69d9a985`. Build it once with
+`python3 -B tools/build_drat.py` (reuse the completed build if present):
 
 ```sh
 set -o pipefail
 nice -n 10 gzip -dc ../maxstacks-two-bp-helices-large/01-input-deletions.drat.gz ../maxstacks-two-bp-helices-large/02-common.drat.gz ../maxstacks-two-bp-helices-large/03-definitions-without-cases.drat.gz ../maxstacks-two-bp-helices-large/04-relations.drat.gz ../maxstacks-two-bp-helices-large/05-context-cases.drat.gz ../maxstacks-two-bp-helices-large/06-physical-cases.drat.gz ../maxstacks-two-bp-helices-large/07-proof.drat.gz |
-  nice -n 10 ./drat-trim-assertions work/checks/D13-rebuilt.cnf -i -f -t 10800 -w
+  nice -n 10 work/drat-trim/drat-trim work/checks/D13-rebuilt.cnf -i -f -t 10800 -w
 ```
 
 The seven decompressed parts must form one stream in the listed order. Require
 normal pipeline termination and drat-trim's `s VERIFIED` success output, plus
 matching whole-stream hash. This optional run takes about 35 minutes in the
-prior record. Package assembly checks its hashes but does not rerun it.
+prior record. The 24 October 2026 package assembly checked its hashes without a new DRAT replay.

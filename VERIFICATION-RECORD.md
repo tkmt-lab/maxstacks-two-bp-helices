@@ -72,10 +72,11 @@ mathematical code, inputs and proofs are unchanged.
 The one fresh manuscript reader returned ACCEPT for scope and models,
 MINOR for reproduction, MAJOR 0. Two minor documentation comments were
 applied: checker-specific DRAT flags and the actual acquisition routes.
-The PDF/TeX were unchanged after that reading. A version-specific v1.1.0
-download link remains a release-maintainer action before public distribution;
-this preparation supplies a local repository and a fresh-clone command. No new D13 replay is part
-of this revision. No maximum is asserted for the gap-4 families.
+The PDF/TeX were unchanged after that reading. At the 28 October 2026 review,
+a version-specific v1.1.0 download link was still a release-maintainer action;
+the supplied input was a local repository with a fresh-clone command. For the
+current versioned acquisition route, see README.md. No new D13 replay was part
+of that revision. No maximum is asserted for the gap-4 families.
 
 ## Version 1.2 preparation checks
 
@@ -142,8 +143,8 @@ Detailed records are in [validation/summary.json](validation/summary.json).
 `control-invalid.json` intentionally records FAIL for a rejected proof; this
 is the expected negative control, not a failed theorem certificate. Final
 package changes add documentation, manifest maintenance and these records.
-The final manifest and file inventory are checked separately. Linux x64 CI
-is specified but has not run on a hosted service. Stored reports document
+The final manifest and file inventory are checked separately. As of the 24 October 2026 package validation, Linux x64 CI
+was specified but had not run on a hosted service. Stored reports document
 execution; rerun the commands for a new machine's check.
 
 ## Official checker and remaining trust

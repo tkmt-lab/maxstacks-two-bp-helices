@@ -1,6 +1,6 @@
 # Claim: twelve two-base-pair helices in a fixed family
 
-This is the mathematical specification accompanying [article draft v1](../paper/paper-v1.pdf).
+This is the mathematical specification accompanying [article Version 1.4](../paper/paper-v1.4.pdf).
 Verification dates, roles and limitations are in [VERIFICATION-RECORD.md](../VERIFICATION-RECORD.md).
 
 ## Model and target

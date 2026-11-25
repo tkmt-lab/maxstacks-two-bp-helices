@@ -1,3 +1,6 @@
+> Historical review record (28 October 2026), referring to the then-supplied
+> package. Current acquisition instructions are in the root README.md.
+
 **Overall: MINOR.** The scope and model distinctions are clear. Two reproduction clarifications remain. This is a six-file textual audit, not independent mathematical verification.
 
 | Requested assessment | Verdict | Reason |

@@ -105,8 +105,8 @@
       },
       {
         "path": "paper/paper-v1.4.pdf",
-        "sha256": "00cfab3dacafd610f64765346cd708416637cedac9d2f4097f5b9afaf25aa9a9",
-        "bytes": 117889
+        "sha256": "396e3869590d998b07d63568a5aaa7840a325e434d5f53b042047f6f5905a1f9",
+        "bytes": 433985
       },
       {
         "path": "paper/v1.3-to-v1.4.diff",
@@ -114,5 +114,6 @@
         "bytes": 4280
       }
     ]
-  }
+  },
+  "historical_record_note": "Earlier input/adaptation entries and article_history_prior_to_v110 record historical assembly sources, including article draft v1.1. The article_v1_4 entries identify the current Version 1.4 TeX, rebuilt PDF and historical TeX diff; manifest.json hashes all current distributable files."
 }
