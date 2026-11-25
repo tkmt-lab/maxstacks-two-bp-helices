@@ -14,7 +14,39 @@ and v1-to-v1.1 diff: ACCEPT for overclaiming and ACCEPT for distinguishing
 the variant from the fixed-family bound 12. This reading did not independently
 verify the D=25 design; that observation was outside the v1.0.0 package's certificates.
 
-## Article 1.4 (5 November 2026)
+## Editorial revision (6 November 2026)
+
+The current Version 1.4 retains its manuscript date of 5 November 2026.
+The editorial revision moves explicit thanks to the README, groups the
+current assurance in article Section 7 and moves the detailed verification
+workflow here. The separate variant is described as a completed supplement.
+The theorem, definitions, proof arguments, tables, sequences, mathematical
+code, input data and certificates are unchanged. The current TeX/PDF and
+v1.3-to-v1.4 diff are identified in PROVENANCE.json and manifest.json.
+
+The separate model-verification implementation used the statement, model
+and CNF specifications, auxiliary embedding description, rival lists and
+certificate manifest. Producer generation code, auxiliary proof-lifting
+explanation, prior check results and the coordinator's implementation were
+withheld. Public checker documentation and parser source were available.
+It recovered the 71-base design, checked every rival, regenerated both input
+CNFs byte for byte and all seven auxiliary rival families, checked word-set
+coverage and full-formula symmetries, and reproduced the 34 contradictions.
+It checked the seven-part proof hashes and complete raw stream, accepted
+the D13 DRAT refutation and reviewed the embedding family by family.
+
+The three initial DRAT runs used the same public drat-trim implementation.
+The separate model-verification implementation did not run cake_lpr.
+Other runs built cake_lpr separately and replayed the stored LRAT certificates
+without rerunning their converter, obtaining the same success result.
+For U14, drat-trim accepts by unit propagation on the inputs, so this does
+not establish that every supplied DRAT addition was exercised. Separate
+propagation traces and replay check the finite step as well.
+
+As of 5 November 2026, hosted CI had not run for package 1.1.0.
+The earlier package checks are local results, not hosted CI results.
+
+## Article 1.4 (5 November 2026; before the editorial revision)
 
 A blind reading of the Version 1.3 article alone found no counterexample to
 the mathematical reductions and independently reproduced the 71-base design
@@ -22,8 +54,8 @@ result and the 32-vertex graph counts; it asked for a retrievable permanent
 package reference, a publication identifier for the separate maximum-25
 result, and a short mathematical reason for the U14 clause symmetries.
 Version 1.4 adds these three items (Appendix A, the D=25 footnote and
-Section 5.2) and nothing else; `paper/v1.3-to-v1.4.diff` gives the exact
-change. Theorem, proofs, tables, data, certificates and checkers are
+Section 5.2). The current `paper/v1.3-to-v1.4.diff` also includes
+the editorial revision described above. Theorem, proofs, tables, data, certificates and checkers are
 unchanged, so the package checks below still apply.
 
 ## Package 1.1.0 / article 1.3 (28 October 2026)
@@ -53,7 +85,7 @@ and LRAT controls are rejected; the LRAT control exits 0 and has no success
 line. No solver proof regeneration is needed. Source revisions and input
 hashes are in `variants/PROVENANCE.json` and `variants/A26/normalization.json`.
 
-The earlier R004 independent A25 verification established the positive design
+The earlier independent A25 verification established the positive design
 and the finite upper argument without interpreting this CNF. This package's
 integration uses both sides' records and is not a new blind verification.
 Cake_lpr checks parsed CNF UNSAT, not the RNA mapping; the package's separate
@@ -101,20 +133,20 @@ The theorem, checker programs, mathematical data and proof files are unchanged.
 |---|---|---|
 | Research Codex | 23–24 October; final DRAT accepted 07:22 | D12 design, rivals, formulas, coverage and proofs. Original full-F binary DRAT accepted in 1,998.526 s. |
 | RNA subleader, Claude | Review logged 08:08 | Separate F/rival reconstruction, fresh public-checker build and full DRAT replay in about 1,947 s; earlier design and upper-bound checks. |
-| Verification Codex, R004 | 08:19–09:20 | Separately implemented model, DP, rivals, whole CNFs, coverage, symmetry and UCP; geometric argument read; full-F DRAT accepted in 2,197.75 s. |
+| Verification Codex | 08:19–09:20 | Separately implemented model, DP, rivals, whole CNFs, coverage, symmetry and UCP; geometric argument read; full-F DRAT accepted in 2,197.75 s. |
 | Research Codex | Before article v1 | DRAT-to-LRAT conversion and official cake_lpr acceptance of original F and all 34 U14 cases. D13 combined pipeline 2,281.960 s. |
 | RNA subleader, Claude | 09:43–09:47 | Own official checker build, all 34 U14 LRATs and stored D13 LRAT replay, 209.90 s, peak RSS 4,296,015,872 bytes. |
 | Literature Codex | Before package assembly | Article v1 preparation and visual checks of all 10 pages. An authorized fresh AI reader accepted four manuscript-review categories. No new computations in that editorial task. |
 
-R004 received seven designated claim inputs (README, statement, SPEC, upper-bound
+The separate verification received seven designated claim inputs (README, statement, SPEC, upper-bound
 argument, two rival lists and manifest) plus named CNF/proof paths. It did not
 read the producer's code/results or coordinating check code. It used the public
 drat-trim implementation; agreement of the three DRAT runs is not three separate
-checker implementations. R004 did not run cake_lpr. Its wall applies to that
+checker implementations. The separate verification did not run cake_lpr. Its access boundary applies to that
 earlier run, not this integrated package. Source code hashes and adaptations
 are listed in PROVENANCE.json.
 
-The final R004 drat-trim revision was `2e3b2dc0ecf938addbd779d42877b6ed69d9a985`,
+The final drat-trim revision for the separate verification was `2e3b2dc0ecf938addbd779d42877b6ed69d9a985`,
 source SHA256 `d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee`.
 It was compiled with assertions enabled, using Apple clang 21.0.0, and run in
 binary forward mode (`-i -f`). Earlier parser-invocation and interrupted runs

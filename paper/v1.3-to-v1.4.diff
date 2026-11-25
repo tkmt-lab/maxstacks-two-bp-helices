@@ -1,5 +1,5 @@
---- paper-v1.3.tex	2026-10-28 16:24:58.154213086 +0900
-+++ paper-v1.4.tex	2026-11-05 14:33:00.865855187 +0900
+--- paper-v1.3.tex
++++ paper-v1.4.tex
 @@ -19,7 +19,7 @@
  \title{Twelve two-base-pair helices: an exact designability bound\protect\\
  for a fixed family in the maxStacks model}
@@ -9,6 +9,17 @@
  \begin{document}
  \maketitle
  \begin{abstract}
+@@ -46,8 +46,8 @@
+ large loop degree. Their Lemma~1 excludes a loop with degree $\Delta$
+ and equal helix length $h$ when $h<\log_6\Delta$. At $h=2$, this gives
+ the necessary condition $\Delta\leq36$; it does not assert that degree
+-$36$ is attainable. We are grateful for their model and degree--length
+-obstruction, which supply the question studied here.
++$36$ is attainable. Their model and degree--length
++obstruction supply the question studied here.
+ 
+ We determine the maximum for one fixed family with helices of length
+ two and specified unpaired positions. Under the model below, a target
 @@ -349,7 +349,25 @@
  To pass from word sets to fixed cases, one must also account for their
  order. Each of the twelve adjacent permutations of the seven-position
@@ -36,16 +47,95 @@
  The adjacent permutations generate every block permutation. Therefore
  any model can be transformed to one with words in lexicographic order
  (using $\mathrm A<\mathrm C<\mathrm G<\mathrm U$)
-@@ -629,7 +647,7 @@
+@@ -550,9 +568,8 @@
+ 2,049,035,259 bytes; the compressed total is 613,931,594 bytes.
+ Verification uses the public \texttt{drat-trim} checker~\cite{DRAT},
+ with \texttt{-i -f}: explicit binary input from standard input and
+-forward verification. The independent run builds with assertions
+-enabled and returns \texttt{VERIFIED}, exit code zero, on the original
+-$F$. Appendix~\ref{app:cert} fixes the input, rivals and raw proof by
++forward verification with assertions enabled. Acceptance of the original
++$F$ requires the success line \texttt{s VERIFIED} and normal exit zero. Appendix~\ref{app:cert} fixes the input, rivals and raw proof by
+ SHA-256. The companion inventory specifies every part and its order.
+ 
+ \subsection{Checking the LRAT with a verified program}
+@@ -560,9 +577,8 @@
+ success line \texttt{s VERIFIED UNSAT} from the official, unmodified
+ ARMv8 build of \texttt{cake\_lpr}~\cite{CAKE}, using LRAT proofs converted
+ from the DRAT certificates. The $D=13$ LRAT has 5,428,472,887 raw bytes
+-and is stored in a 1,598,317,453-byte gzip file. A separate build replays
+-the stored certificates without rerunning their converter and obtains
+-the same success result. Corrupted-proof controls are rejected.
++and is stored in a 1,598,317,453-byte gzip file.
++Corrupted-proof controls are rejected.
+ 
+ The HOL4 theorem \texttt{machine\_code\_sound} for the pinned CakeML
+ revision connects the compiled checker to its parsed CNF semantics.
+@@ -584,38 +600,20 @@
+ Table~\ref{tab:obligations}. The checker theorem does not itself
+ formalize those RNA arguments.
+ 
+-\section{Independent verification}\label{sec:independent}
+-A separate verification implementation used the statement, model and
+-CNF specifications, the auxiliary embedding description, the rival
+-lists and the certificate manifest. It did not use the producer's
+-generation code, auxiliary proof-lifting explanation, prior check
+-results or the coordinator's implementation. Public checker
+-documentation and parser source were available to it. Audit details,
+-dates and responsibility are recorded once in the companion
+-\texttt{VERIFICATION-RECORD.md}.
+-
+-This implementation recovered the 71-base design result, checked every
+-rival, and regenerated both input CNFs byte for byte. It regenerated
+-all seven auxiliary rival families, checked the entire word-set cover
+-and the full-formula symmetries, and reproduced all 34 case
+-contradictions. It checked the seven-part proof's hashes and complete
+-raw stream, and accepted the $D=13$ refutation. It also reviewed the
+-embedding family by family. Tests of 50,199 mapped rivals supplement
+-that general argument.
+-
+-The three initial DRAT checks use the same public \texttt{drat-trim}
+-implementation. The additional \texttt{cake\_lpr} checks and replay
+-supply a different checker with a proved correctness theorem, but are
+-not part of the separate model-verification implementation described
+-above: that implementation used \texttt{drat-trim} and did not rerun
+-\texttt{cake\_lpr}. The verification record distinguishes the roles.
++\subsection{Independent model checks}
++An independently written implementation checked the design, all rivals,
++CNF reconstruction, finite case cover and full-formula symmetries.
++The general embedding argument was reviewed separately, family by family. The implementation reproduced the 34 case contradictions and accepted the
++$D=13$ DRAT refutation. Tests of 50,199 mapped rivals supplement the
++general geometric argument. These model checks and the verified LRAT
++checks have the distinct scopes in Table~\ref{tab:obligations}.
++Verification provenance, access boundaries and the scope of the separate
++runs are recorded in \texttt{VERIFICATION-RECORD.md}.
++
+ For the auxiliary cases, \texttt{drat-trim} accepts by unit propagation
+-on the inputs, so this does not mean every supplied DRAT addition was
+-exercised. Separate propagation traces and replay check that finite
+-step as well. Normalization, the dynamic-programming decomposition and
+-the embedding remain prose arguments. The full RNA theorem has not
+-been formalized in a proof assistant, and this article has not undergone
+-human peer review.
++on the inputs; separate propagation traces and replay also check that
++finite step. The full RNA theorem has not been formalized in a proof
++assistant, and this article has not undergone human peer review.
+ 
+ \section{Scope}
+ The maximum $12$ concerns precisely~\eqref{eq:target}, with every
+@@ -629,9 +627,8 @@
  GCCAGGGGACCGGACCUUAAAACCGUACCGU\allowbreak{}
  UGCCAUGCCAGACUCGACUCAUCAUAUCAUU\allowbreak{}
  ACUAUACUACUCAGCUCAGAAAUUGCCGCGU}
 -designs the target \texttt{((} followed by 24 copies of \texttt{((.))} and then \texttt{))}. The \texttt{variants/} supplement of certificate-package version 1.1.0 contains certificates and a prose proof that the maximum for this zero-separator, one-base-hairpin family is exactly 25. This result is separate from the theorem of this article.} This variant is being
-+designs the target \texttt{((} followed by 24 copies of \texttt{((.))} and then \texttt{))}. The sequence can be checked with the dynamic program of Section~\ref{sec:lower}. A separate supplement, \path{variants/} in version 1.1.0 of the certificate package (Appendix~\ref{app:cert}), gives certificates and a prose argument that the maximum for this zero-separator, one-base-hairpin family is exactly 25. That upper bound is not proved here, and this article does not rely on it.} This variant is being
- studied separately and is outside the claims and certificates of the
- present paper. If hairpins must contain three unpaired nucleotides, these
+-studied separately and is outside the claims and certificates of the
+-present paper. If hairpins must contain three unpaired nucleotides, these
++designs the target \texttt{((} followed by 24 copies of \texttt{((.))} and then \texttt{))}. The sequence can be checked with the dynamic program of Section~\ref{sec:lower}. A separate supplement, \path{variants/} in version 1.1.0 of the certificate package (Appendix~\ref{app:cert}), gives certificates and a prose argument that the maximum for this zero-separator, one-base-hairpin family is exactly 25. That upper bound is not proved here, and this article does not rely on it.} This variant is treated in the separate supplement and is outside
++the theorem of this article. If hairpins must contain three unpaired nucleotides, these
  targets themselves cease to be legal; lengthening them defines a
-@@ -669,6 +687,15 @@
+ different family. The same package supplement gives designs with 16 and 21 helices for two such three-base-hairpin families under $j-i\geq4$, as lower bounds only. No conclusion about the Turner energy model,
+ physical molecules or experimental folding follows from this theorem.
+@@ -669,6 +666,15 @@
  
  \appendix
  \section{Certificate identifiers}\label{app:cert}

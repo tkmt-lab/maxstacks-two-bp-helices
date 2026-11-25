@@ -1,6 +1,14 @@
 # Supplement: zero separators and three-base hairpins
 
-**Package 1.1.0 — 2026-11-12.** From the package root, with Python 3.11+:
+**Package 1.1.0 — 2026-11-12.**
+All-versions DOI: [10.5281/zenodo.23679267](https://doi.org/10.5281/zenodo.23679267).
+
+The zero-separator, one-base-hairpin family has maximum designable D **25**.
+For three-base hairpins, explicit designs give lower bounds **16** and **21**.
+These witnesses and checks let RNA inverse-folding researchers compare
+the effect of hairpin and separator lengths in the maxStacks model.
+
+From the package root, with Python 3.11+:
 
 ```sh
 python3 -B checkers/verify.py
@@ -10,7 +18,7 @@ Expected: exit 0 and `work/checks/verification.json` with `"status": "PASS"`.
 Obtain the versioned package using the [main README Quick start](../README.md#quick-start).
 
 These results are separate from the article's fixed separator-1/hairpin-1
-maximum 12. Package **1.1.0** adds three certificates:
+maximum 12. Package **1.1.0** adds results for three variant families:
 
 | Family | Exact target, D>=3 | Pair gap j-i | Result | Length |
 |---|---|---:|---|---:|
@@ -18,12 +26,12 @@ maximum 12. Package **1.1.0** adds three certificates:
 | a | `'((.' + '((...)).'*(D-1) + '))'` | >=4 | Design at D **16**, lower bound only | 125 |
 | b | `'((' + '((...))'*(D-1) + '))'` | >=4 | Design at D **21**, lower bound only | 144 |
 
-D includes the enclosing two-base-pair helix. All structures are noncrossing,
-allow AU/UA, CG/GC and GU/UG, have no isolated pair, and maximize stacks.
+D includes the enclosing two-base-pair helix. Legal structures are noncrossing,
+allow AU/UA, CG/GC and GU/UG, and have no isolated pair. A design makes its
+target the unique compatible legal structure of maximum stack score.
 Gap 2 permits one-base hairpins; gap 4 requires at least three unpaired bases
 in a hairpin. In each row, **every competitor pair** obeys that row's gap.
-No maximum for a or b is claimed. None of these is a Turner or experimental
-RNA result, and none changes the article's theorem. The positive sequences
+The positive sequences
 and literal targets are in `designs/*.json`; the A25 upper argument is
 [PROOF-A25.md](PROOF-A25.md).
 
@@ -98,16 +106,22 @@ removes 25 repeated literals in 25 of 4,990 steps, preserving pivots,
 step order and additions/deletions. `A26/normalization.json` records both.
 
 Cake_lpr certifies parsed CNF UNSAT under the main README's trust boundary.
-The complete variable-to-RNA reconstruction for this archived encoding is
-not independently checked here; the CNF-free finite enumeration and prose
-proof provide the RNA upper argument. Neither that Python enumeration nor
-the uniqueness DP is formally verified. Integration uses the earlier R004
-independent verification and producer inputs together, so this is a fresh
-reproduction, not a new blind derivation or human peer review.
+The CNF-free finite enumeration and prose proof provide the RNA upper argument.
+Integration uses the earlier separate verification and producer inputs together.
 `PROVENANCE.json` records pinned input hashes. Scientific results are kept
 separate from the manuscript reading and literature search.
 
+## Scope
+
+No maximum for a or b is claimed. These results concern maxStacks rather
+than Turner energies or experimental RNA and leave the article's fixed-family
+theorem unchanged. The complete variable-to-RNA reconstruction for the archived
+A26 encoding has not been independently checked; neither the Python enumeration
+nor uniqueness DP is formally verified. Package integration is not a new blind
+derivation, and this work has not undergone independent human peer review.
+
 This supplement is included in package `v1.1.0` (2026-11-12); use the main
-README's versioned acquisition command. The v1.0.0 archive does not contain
-these files. The A26 files are included in this supplement and require none
+README's versioned acquisition command. These files are included from v1.1.0 onward. The A26 files are included in this supplement and require none
 of the separate large D13 attachments.
+
+Research contact: Tatsuhiko Takimoto, [research@tatsuhikotakimoto.com](mailto:research@tatsuhikotakimoto.com).

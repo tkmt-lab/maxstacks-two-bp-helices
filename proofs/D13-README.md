@@ -2,6 +2,9 @@
 
 The eight unchanged D13 attachments for package versions 1.0.0 and 1.1.0
 are outside Git, at [the v1.0.0 archive](https://doi.org/10.5281/zenodo.23679268).
+The same named files are also available from the
+[GitHub v1.0.0 release](https://github.com/tkmt-lab/maxstacks-two-bp-helices/releases/tag/v1.0.0);
+check them against the fixed hashes below.
 Download the eight filenames below into `../maxstacks-two-bp-helices-large/`
 beside the repository and check their hashes before use. Original proof
 certificates: copyright 2026 Tatsuhiko Takimoto, CC BY 4.0; see the repository's

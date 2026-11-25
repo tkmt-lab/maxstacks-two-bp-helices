@@ -2,6 +2,10 @@
 
 ## 1.1.0 — 2026-11-12
 
+- Put the result before the README example, consolidate scope, add research
+  contact and specific acknowledgments; move article workflow details to the
+  verification record and refresh the current Version 1.4 PDF and hashes.
+
 - Add the separate zero-separator, one-base-hairpin maximum-25 supplement,
   its A25 design and finite exclusion, and A26 LRAT/DRAT certificates.
 - Add three-base-hairpin a16/b21 designs as lower bounds only.

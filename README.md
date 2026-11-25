@@ -1,6 +1,12 @@
 # Twelve two-base-pair helices in the maxStacks model
 
 **Package 1.1.0 — 2026-11-12. Article Version 1.4.**
+All-versions DOI: [10.5281/zenodo.23679267](https://doi.org/10.5281/zenodo.23679267).
+
+In the maxStacks model, the maximum number of two-base-pair helices in the
+fixed one-base-hairpin, one-base-separator family below is **12**.
+Researchers studying RNA inverse folding can use the design, exclusion
+arguments and certificate checks to examine this exact boundary.
 
 ## Quick start
 
@@ -14,7 +20,7 @@ python3 -B checkers/verify.py
 
 Expected: exit 0 and `work/checks/verification.json` containing
 `"status": "PASS"` (D12 optimum 12, exact count 1, target equality).
-All light-check inputs are included; no SAT solver or large download is needed.
+All light-check inputs are included and use Python’s standard library.
 Run the remaining commands below from this clone; reuse completed checker builds.
 
 For the fixed target family
@@ -28,13 +34,7 @@ T_D has no design for every D≥13. This package contains the
 [article, Version 1.4](paper/paper-v1.4.pdf), its [TeX source](paper/paper-v1.4.tex),
 the [claim specification](claims/STATEMENT-A.md), data and reproducible checks.
 
-The question and maxStacks framework come from **Théo Boury, Laurent Bulteau
-and Yann Ponty**, [RNA Inverse Folding Under Stacked Base Pair Maximization,
-WABI 2026](https://doi.org/10.4230/LIPIcs.WABI.2026.12).
-We acknowledge their work and the DRAT-trim and CakeML/cake_lpr contributors.
-The cited authors did not participate in or endorse this work.
-
-## Model and scope
+## Model and results
 
 Structures are noncrossing matchings, allow AU/UA, CG/GC and GU/UG pairs,
 and have no isolated pair. The score counts adjacent nested pair pairs
@@ -46,24 +46,40 @@ This differs from the usual minimum of three unpaired bases in RNA models.
 The target has one enclosing two-base-pair helix and D−1 inner two-base-pair
 helices, with one-base hairpins and separators.
 
-The article result concerns this fixed family. It does not classify every D≤12
-or arbitrary RNA trees. Package **1.1.0** adds the separate [variants supplement](variants/README.md):
+The article result concerns this fixed family. Package **1.1.0** adds the
+separate [variants supplement](variants/README.md):
 
 - **A**, zero separators, one-base hairpins, **j-i>=2**: maximum designable D is
   exactly **25**, with the 124-base design and exclusion of every D>=26.
 - **a** and **b**, three-base hairpins, **j-i>=4**: designs at **16** and **21**
   helices respectively, as **lower bounds only**.
 
-D counts the enclosing helix. These supplement results do not change the
-article theorem. No Turner-model, experimental, priority or human peer-review
-claim is made.
+D counts the enclosing helix. The supplement and the article have separate claims.
+
+## Scope
+
+The maximum 12 applies to the stated fixed family; it does not classify every
+D≤12 or arbitrary RNA trees. The supplement's maximum 25 belongs to the
+zero-separator family, while its gap-4 results are lower bounds only.
+No Turner-model, experimental or priority claim is made. This work has not
+undergone independent human peer review, and the cited authors have not
+participated in or endorsed it.
+
+Certificate checking establishes parsed CNF unsatisfiability, not the
+RNA-to-CNF interpretation, uniqueness DP, normalization or arbitrary-D
+embedding. These rely on the stated algorithms, finite checks and prose
+arguments; the Python programs and the full RNA theorem are not formally
+verified. The archived A26 CNF has no complete independently checked
+variable-to-RNA reconstruction; its RNA upper bound uses the separate
+CNF-free enumeration and prose proof. Package assembly integrates prior
+research and separate verification and is not a new blind verification.
 
 ## Obtain version 1.1.0
 
 The versioned source is the `v1.1.0` tag at
 [tkmt-lab/maxstacks-two-bp-helices](https://github.com/tkmt-lab/maxstacks-two-bp-helices/tree/v1.1.0).
 The Quick start above obtains that version. Keep the exact tag/commit when
-comparing results. The v1.0.0 archive does not contain the added supplement.
+comparing results. The added supplement is included from v1.1.0 onward.
 Only the optional D13 replay needs separately archived large files; all added
 A26 files are included.
 
@@ -101,8 +117,8 @@ ignored `work/`. The programs reconstruct, rather than trust stored verdicts:
   state-set exclusions. Details and separate certificate commands are in
   [variants/README.md](variants/README.md).
 
-These finite computations do not mechanize the general-D geometric argument
-or normalization proof. The Python programs are not formally verified.
+The general-D geometric argument and normalization proof are given in prose;
+see Scope for the distinction between these arguments and finite checks.
 
 ## Check all 34 U14 LRATs
 
@@ -143,12 +159,15 @@ compressed/expanded hashes and the DRAT order are in
 [data/large-proofs.json](data/large-proofs.json) and [manifest.json](manifest.json).
 The unchanged large D13 proofs are available as eight separate attachments
 at the [v1.0.0 archive](https://doi.org/10.5281/zenodo.23679268).
+The same named files are also available from the
+[GitHub v1.0.0 release](https://github.com/tkmt-lab/maxstacks-two-bp-helices/releases/tag/v1.0.0);
+check them against the fixed hashes below or in `data/large-proofs.json`.
 Download the seven named DRAT gzip parts and `D13.lratb.gz` to the companion
 directory, preserving their names; their checksums are in `data/large-proofs.json`.
 They are not needed for the light checks or the added A26 proof.
 The v1.0.0 package was archived as [DOI 10.5281/zenodo.23679268](https://doi.org/10.5281/zenodo.23679268).
 The source release identifier for this package is `v1.1.0` at the repository above.
-The linked v1.0.0 DOI identifies the unchanged large proofs, not this supplement.
+The linked v1.0.0 DOI identifies the original package and unchanged large proofs.
 
 With the companion directory beside this repository, run:
 
@@ -175,33 +194,41 @@ nice -n 10 gzip -dc ../maxstacks-two-bp-helices-large/D13.lratb.gz |
 For the shell form, inspect both normal pipeline termination and the exact
 `s VERIFIED UNSAT` line; use the Python runner for hash and complete-delivery checks.
 The companion README also gives the seven-part binary DRAT replay order.
-A DRAT replay is optional; the verification record documents the earlier
-hash checks and archived LRAT full-F replay. Those historical measurements
-do not represent a new DRAT replay for this release. CI specifies the light checks, all U14 LRATs, and the added A26 LRAT/DRAT
-checks; D13 remains a separate local check. As of 5 November 2026, hosted CI had not run for v1.1.0;
-local execution does not establish a hosted CI result.
+A DRAT replay is optional. CI specifies the light checks, all U14 LRATs and
+the added A26 LRAT/DRAT checks; D13 is a separate local check. Historical
+replay measurements and hosted CI status are in VERIFICATION-RECORD.md.
 
 ## Assurance and provenance
 
-The checker build uses official precompiled assembly and the C wrapper, not a
-local rebuild of HOL4/CakeML proofs. The trust boundary includes HOL4's logic
-and kernel, the formal parsing/CNF and machine models, the correspondence of
-distributed assembly to the verified compilation, the C FFI, compiler/assembler/
-linker, OS, file I/O and hardware. The upstream checksum table's C-wrapper entry
-is stale at this revision; this package checks the actual pinned Git blob hash.
-See [VERIFICATION-RECORD.md](VERIFICATION-RECORD.md) for exact revisions and scope.
+The checker build uses official precompiled assembly and the C wrapper.
+The trust boundary includes HOL4's logic and kernel, the formal parsing/CNF
+and machine models, the correspondence of distributed assembly to the
+verified compilation, the C FFI, compiler/assembler/linker, OS, file I/O and
+hardware. The upstream checksum table's C-wrapper entry is stale at this
+revision; this package checks the actual pinned Git blob hash.
+See [VERIFICATION-RECORD.md](VERIFICATION-RECORD.md) for exact revisions,
+the scope of the separate checks and the distributed-assembly build.
 
 A successful cake_lpr run certifies the parsed CNF's unsatisfiability under
-that boundary. It does not certify the RNA-to-CNF interpretation, uniqueness
-DP, arbitrary-D mapping, novelty or empirical usefulness. The SAT solver and
-DRAT-to-LRAT converter need not be trusted for an accepted LRAT's conclusion.
+that boundary. Its conclusion is independent of the SAT solver and
+DRAT-to-LRAT converter. The model-level obligations are described in Scope.
 
-The standard-library mathematics code was adapted from the lab's earlier
-separate verification. That effort received the claim inputs but withheld
-producer code and reports. Package assembly used both result sets and is
-**not a new blind verification**. [PROVENANCE.json](PROVENANCE.json) records
-input and adaptation hashes. Verification was computational/AI-assisted;
-no independent human review is represented here.
+The standard-library mathematics code was adapted from an earlier separate
+verification implementation. [PROVENANCE.json](PROVENANCE.json) records
+input and adaptation hashes. Codex and Claude assisted the mathematical
+arguments, search, software, verification, literature comparison and writing.
+Tatsuhiko Takimoto is responsible for the manuscript.
+
+## Acknowledgments
+
+Théo Boury, Laurent Bulteau and Yann Ponty introduced the maxStacks
+inverse-folding framework and degree–length obstruction that motivate this
+question in [RNA Inverse Folding Under Stacked Base Pair Maximization,
+WABI 2026](https://doi.org/10.4230/LIPIcs.WABI.2026.12).
+Marijn J. H. Heule and the DRAT-trim contributors provide the DRAT proof
+checker; the cake_lpr contributors and the CakeML project provide the
+verified LRAT checker used here. We are grateful for these foundations
+and tools.
 
 ## Files, citation and maintenance
 
@@ -211,17 +238,11 @@ Git records the manifest itself. Never refresh hashes to conceal an unexplained
 mismatch. After a reviewed intentional edit, use `python3 -B tools/update_manifest.py`
 and rerun the relevant checks.
 
-The included current PDF and TeX are **Version 1.4**. Relative to v1.2,
-Version 1.3 changed only version/date metadata, the D=25 footnote's package
-reference and one Scope sentence about the gap-4 lower designs. Version 1.4
-adds the package's permanent location (repository, tag and Zenodo DOIs) to
-Appendix A, a short derivation of the block and letter symmetries of U14 in
-Section 5.2, and states in the D=25 footnote that the maximum 25 is not proved
-in the article and is not relied on. The 124-base sequence, main theorem,
-proofs and tables are unchanged; the maximum 25 is a supplement result, not a
-theorem of the article. Earlier drafts are retained in `paper/`, and the exact
-diffs [v1.2 to v1.3](paper/v1.2-to-v1.3.diff) and
-[v1.3 to v1.4](paper/v1.3-to-v1.4.diff) record the edits. To rebuild
+The current PDF and TeX are **Version 1.4**. Article history is recorded in
+[CHANGELOG.md](CHANGELOG.md) and [VERIFICATION-RECORD.md](VERIFICATION-RECORD.md).
+Earlier versions in `paper/` are historical material.
+The exact diffs [v1.2 to v1.3](paper/v1.2-to-v1.3.diff) and
+[v1.3 to the current v1.4](paper/v1.3-to-v1.4.diff) record the edits. To rebuild
 with an existing LaTeX installation, use the preamble's packages and run
 the following from the package root:
 
@@ -235,6 +256,7 @@ PDF bytes may differ
 across engines. Certificate checks do not need a TeX installation.
 
 Tatsuhiko Takimoto. Package version **1.1.0**; article **Version 1.4**.
+Research contact: [research@tatsuhikotakimoto.com](mailto:research@tatsuhikotakimoto.com).
 See [CITATION.cff](CITATION.cff). Code is Apache-2.0; original prose, data and
 proof certificates are CC BY 4.0. Full license texts and third-party boundaries
 are in [LICENSE](LICENSE). Version 1.0.0 remains archived unchanged.
